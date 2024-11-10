@@ -5,3 +5,4 @@ $( function() {
 		,	duration: "fast"
 	});
 } );
+
