@@ -1,0 +1,527 @@
+strong {
+    font-family: $font-family-bold-dm, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* awesome bootstrap checkbox overrides */
+input[type='checkbox'].styled:checked + label:after,
+input[type='radio'].styled:checked + label:after,
+.checkbox input[type='checkbox']:checked + label:after {
+    font-family: 'fontello';
+    content: '\e829';
+}
+input[type='checkbox'].styled:checked label:after,
+input[type='radio'].styled:checked label:after,
+.checkbox label:after {
+    padding-left: 2px;
+    padding-top: 1px;
+    font-size: 12px;
+}
+
+body,
+html {
+    font-family: $font-family-reg-dm, Arial, Helvetica, sans-serif;
+    background: #4f6571 no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    min-height: 771px;
+    font-size: 13px;
+    position: relative;
+    text-align: center !important;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    min-height: auto;
+}
+body,
+html,
+fieldset,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+    padding: 0px;
+}
+.login-form input[readonly] {
+    background-color: #efefef;
+}
+.login-footer {
+    background: #efefef;
+    padding: 14px 0 12px 0;
+    min-height: 60px;
+}
+.login-footer .powered-by {
+    color: #666;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+.login-footer img {
+    width: 110px;
+    margin-top: -6px;
+}
+.login-footer-empty {
+    height: 15px;
+}
+
+footer {
+    font-family: $font-family-light-dm, Arial, Helvetica, sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6px 0 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.forgot-password-content {
+    display: none;
+}
+
+.form-bottom .get-started {
+    padding: 15px 0 0 0;
+    color: #4f6571;
+}
+
+.form-bottom .get-started.divider {
+    margin: 2px 0;
+    padding: 0;
+}
+.form-bottom .get-started a {
+    color: #4f6571;
+}
+.form-bottom .get-started .forgot-pw {
+    margin-right: 35px;
+}
+.form-bottom input.btn-main,
+.form-bottom button.btn-alt {
+    font-family: $font-family-bold-dm, Arial, Helvetica, sans-serif;
+    width: 305px;
+    height: 44px;
+    color: #fff;
+    background: #6b6b6b;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.form-bottom button.btn-alt {
+    background: #fff;
+    border: 1px solid #6b6b6b;
+    color: #6b6b6b;
+}
+body.whitelabel .form-bottom input.btn-main {
+    background: #555;
+}
+
+.form-bottom .return {
+    padding: 40px 0 0 0;
+}
+
+.form-bottom .return,
+.form-confirmation {
+    text-align: left;
+}
+
+.form-bottom .return a,
+.form-confirmation .form-info a {
+    color: #fff;
+}
+
+.form-confirmation {
+    padding: 0 3px 0 2px;
+}
+
+.form-confirmation .form-info.middle {
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 22px;
+}
+
+.form-confirmation .form-info.middle a {
+    text-decoration: underline;
+}
+
+.form-confirmation .form-info.top {
+    background: url('../img/forgot_password_hr.png') 50% 100% no-repeat;
+    padding-bottom: 21px;
+}
+
+.form-confirmation .form-info strong {
+    display: block;
+    font-size: 15px;
+}
+
+.form-info {
+    padding: 40px 0 0 0;
+}
+
+.form-links {
+    padding: 8px 0 0 0;
+}
+
+.form-links,
+.form-links a,
+.login-form .form-links label,
+.form-info {
+    color: #fff;
+}
+
+.form-links a {
+    float: right;
+}
+
+.form-links p input {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.form-links p label {
+    font-size: 13px;
+}
+
+.form-links p,
+.login-form .links p {
+    text-align: left;
+    padding: 0;
+    height: 35px;
+}
+
+.login-form {
+    padding: 0;
+}
+.login-form a {
+    text-decoration: underline;
+}
+.login-form a:hover {
+    color: #33424a;
+    text-decoration: none;
+}
+
+.login-form .icon-cancel {
+    float: right;
+    opacity: 0.8;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.login-form .icon-cancel,
+.login-form .error .message {
+    display: block;
+}
+
+.form-confirmation {
+    display: none;
+}
+
+.login-form .error {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    background: #e8565a;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+}
+
+.login-form .error .message {
+    padding: 0 0 0 14px;
+    line-height: 40px;
+}
+
+.login-form fieldset {
+    display: block;
+    width: 450px;
+    /*height: 450px;*/
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    border: 10px solid rgba(12, 13, 13, 0.25);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+}
+.login-form .input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+}
+.login-form .input-wrap.checkbox {
+    text-align: left;
+    margin: 15px 0 10px 15px;
+}
+.login-form .input-wrap.checkbox label {
+    font-size: 14px;
+    color: #33424a;
+}
+.login-form input[type='email'],
+.login-form input[type='text'],
+.login-form input[type='password'] {
+    border: 1px solid #ccc;
+    color: #33424a;
+    padding: 10px 10px 10px 60px;
+    width: 305px;
+    border-radius: 2px;
+}
+
+.login-form .input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 47px;
+    width: 47px;
+    border-right: 1px solid #ccc;
+}
+.login-form .input-icon i {
+    font-size: 20px;
+    color: #6b6b6b;
+    margin: 10px 0 0 3px;
+    display: inline-block;
+}
+.login-form .input-icon i.icon-mail-alt {
+    font-size: 16px;
+    margin-top: 12px;
+}
+.login-form .input-icon i.icon-building {
+    font-size: 17px;
+    margin-top: 13px;
+}
+body.whitelabel .login-form {
+    padding-top: 75px;
+}
+body.whitelabel .login-form .login-header {
+    background-color: #555;
+}
+body.whitelabel .login-form .input-icon i {
+    color: #555;
+}
+
+.login-form label {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.login-form input,
+.login-form button {
+    font-size: 18px;
+}
+.login-form p,
+.login-form fieldset {
+    position: relative;
+}
+.login-form-content,
+.forgot-password-content {
+    position: relative;
+    width: 305px;
+    height: auto;
+    margin: 50px auto;
+}
+#register-wrap .login-form-content {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.register-note {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 0;
+    margin-bottom: -20px;
+}
+
+.login-header {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #efefef;
+    font-size: 30px;
+    height: auto;
+}
+.login-header img {
+    max-width: 260px;
+}
+
+.modal {
+    top: 160px;
+}
+.modal,
+.modal-content,
+.modal-dialog,
+.modal-header,
+.modal-open .modal,
+.modal-open {
+    overflow: visible;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-content {
+    border-radius: 3px;
+    padding: 0;
+    box-shadow: 0 0 40px 4px rgba(0, 0, 0, 0.4);
+}
+.modal-dialog {
+    width: 760px;
+    margin: 0 auto 0 auto;
+}
+.modal-header {
+    min-height: 0;
+    padding: 0;
+}
+.modal-header .close {
+    width: 46px;
+    height: 46px;
+    background: url('../img/icon_close_legacy.png');
+    right: -23px;
+    top: -23px;
+    opacity: 1;
+    filter: none;
+}
+.modal-header .close[class] {
+    background: url('../img/icon_close.png');
+    z-index: 100;
+}
+.modal-title {
+    font-size: 24px;
+}
+
+/* register success page */
+.info-guest {
+    background: #fff;
+    width: 40%;
+    padding: 80px;
+    border-radius: 3px;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.info-guest p {
+    margin-top: 50px;
+    font-size: 16px;
+}
+.info-guest strong {
+    font-family: $font-family-bold-dm, Arial, Helvetica, sans-serif;
+}
+
+.login-form,
+#login-wrap,
+#register-wrap {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+/* bootstrap-notify custom styles (alerts) */
+div[data-notify='container'] {
+    z-index: 2000;
+    padding: 6px 10px;
+    font-size: 14px;
+    text-align: left;
+    top: 10px;
+    right: 10px;
+    left: 10px; /* force center aligned */
+    box-shadow: 0 4px 6px rgba(153, 153, 153, 0.3);
+    border-radius: 2px;
+    width: 450px; /* width of the login box */
+}
+div[data-notify='container'].alert-danger {
+    background-color: rgba(242, 222, 222, 0.95);
+}
+div[data-notify='container'].alert-warning {
+    /*background-color: rgba(242, 222, 222, .95);*/
+}
+div[data-notify='container'].alert-info {
+    /*background-color: rgba(242, 222, 222, .95);*/
+}
+div[data-notify='container'] [data-notify='title'] {
+    display: inline-block;
+    margin-right: 5px;
+}
+div[data-notify='container'] button.close {
+    font-size: 27px;
+    line-height: 0;
+    padding: 12px 0 0;
+}
+
+.mb-signup-modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(4, 4, 4, 0.3);
+}
+
+.mb-signup-modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    max-width: 584px;
+    max-height: 621px;
+    border-radius: 8px;
+}
+
+.mb-signup-modal-dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 100%;
+}
+
+.mb-signup-modal-dialog h3 {
+    width: 400px;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+#mb-signup-website.mb-signup-modal-dialog  h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.mb-signup-modal-dialog p {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.mb-signup-modal-dialog  input.mb-input:focus-visible {
+    outline: none;
+    border: 1px solid #4D4D4D;
+}
+
+.mb-signup-submit-btn {
+    background-color: #1865FD;
+    color: #FFFFFF;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    width: 169px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input.mb-input {
+  width: 80%;
+  max-width: 430px;
+  padding: 10px 23px;
+  border-radius: 8px;
+  font-size: 22px;
+  line-height: 22px;
+  border: 1px solid #CFCFCF;
+}

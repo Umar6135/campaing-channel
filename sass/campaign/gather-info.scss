@@ -1,0 +1,311 @@
+.survey-card .accordion-border-number-point {
+  position: absolute;
+  top: 15px;
+  z-index: 5;
+}
+
+.survey-question-line {
+  border-left: 1px solid #4F6571;
+  height: 110%;
+}
+
+.survey-question-line.answer-line {
+  height: 20px;
+}
+
+.survey-card .icon-plus-wrap-line {
+  position: absolute;
+  top: 8px;
+  left: -14px;
+}
+
+.delete-wrap {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  color: #f0a0a3;
+  background-color: inherit;
+  font-size: 1.65em;
+  cursor: pointer;
+}
+
+.survey-card .survey-actions .add-wrap i {
+  font-size: 1.6em;
+  position: inherit;
+}
+
+.survey-card .btn-add {
+  color: #62D684;
+  background-color: inherit;
+  border: 1px dashed #62cb79;
+}
+
+.survey-card .btn-add:hover,
+.survey-card .btn-add:active,
+.survey-card .btn-add:focus {
+  color: #62D684;
+  background-color: inherit;
+  border: 1px solid #62cb79;
+}
+
+.survey-card .survey-question {
+  margin-top: -24px;
+  margin-bottom: 24px;
+}
+
+.survey-card .survey-answer input {
+  width: 90%;
+}
+
+.survey-card .row > .col-1 {
+  margin-top: 22px;
+  border-left: 1px solid #4F6571;
+}
+
+.survey-card .row > .col-11 {
+  padding-left: 0;
+}
+
+
+#survey-questions-accordion {
+  .card-header {
+    cursor: default;
+
+    &.question-title {
+      background-color: #EBF0F3;
+      padding: 0.5rem 1rem;
+    }
+
+    .accordion-item-title {
+      font-size: 1rem;
+    }
+  }
+
+
+  .answer-wrap {
+    background-color: #f9fafb;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+.contenteditable {
+  outline: dashed #85c1ea;
+  cursor: pointer;
+  min-width: 30px;
+  padding: 0.1rem .5rem;
+}
+
+.text-success.add-answer {
+  .add-wrap {
+    margin-bottom: -5px;
+  }
+}
+
+.delete-wrap {
+  .minus-hide {
+    display: none;
+  }
+
+  &:hover {
+    .minus-hide {
+      display: block;
+    }
+
+    .minus-show {
+      display: none;
+    }
+  }
+}
+
+.add-wrap {
+  .plus-hide {
+    display: none;
+  }
+
+  &:hover {
+    .plus-hide {
+      display: block;
+    }
+
+    .plus-show {
+      display: none;
+    }
+  }
+}
+
+.gather-info-form-accordion {
+  .btn {
+    height: 38px;
+    width: 160px;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+.form-header-text {
+  color: #324047;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form-wrap .jumbotron {
+  background-color: #f6f7f9;
+  border-radius: 3px;
+}
+
+.form-wrap #add-field {
+  color: #62D684;
+  border: 1px dashed #62cb79;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  height: auto;
+  border-radius: 0.3rem;
+
+  &:hover, &:active, &:focus {
+    border: 1px solid #62cb79;
+  }
+}
+
+#social-image, #lead-form-image, #redemption-type-image {
+  max-width: 545px;
+}
+
+// LEAD FORM STYLES
+#lead-form {
+  .lead-form-button-container {
+    display: flex;
+  }
+
+  #lead-form-button-width {
+    &::-webkit-slider-runnable-track {
+      cursor: pointer;
+    }
+
+    &::-webkit-slider-thumb {
+      cursor: pointer;
+    }
+
+    &::-moz-range-track {
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      cursor: pointer;
+    }
+
+    &::-ms-track {
+      cursor: pointer;
+    }
+
+    &::-ms-thumb {
+      cursor: pointer;
+    }
+
+    &.form-control-range {
+      border: none;
+      outline: none;
+      padding: 0;
+      flex: 3;
+      cursor: pointer;
+    }
+  }
+
+  .lead-form-customize {
+    padding: 0;
+    padding-top: 55px;
+
+    .lead-form-customize-container {
+      display: inline-flex;
+      position: relative;
+      min-height: 1.5rem;
+      margin-bottom: 15px;
+
+      &.lead-form-expanded {
+        display: block;
+        position: relative;
+        min-height: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .range-container {
+        display: flex;
+        align-items: center;
+      }
+
+      #range-value-counter {
+        font-size: 13px;
+        font-style: italic;
+        color: #4E6571;
+        flex: 1;
+      }
+
+      .lead-form-input-text {
+        height: 32px;
+        width: 100%;
+        border: 1px solid #C6CCCD;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+      }
+
+      .lead-form-label {
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
+
+      .lead-form-input-container {
+        box-sizing: border-box;
+        border: 1px solid #C6CCCD;
+        padding: 2px;
+        max-height: 29px;
+        border-radius: 6px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .color-picker {
+        height: 23px;
+        width: 23px;
+        border-radius: 2px;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .lead-form-label-text {
+        color: #1D2123;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .lead-form-example-button {
+    outline: none;
+  }
+
+  .lead-form-img-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    justify-content: center;
+
+    .lead-form-img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+// PICKR OVERRIDES
+.pcr-clear {
+  background-color: #f44250 !important;
+}

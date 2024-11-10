@@ -1,0 +1,21 @@
+/*------------------------------------*
+	@COMPONENTS #STATUS
+\*------------------------------------*/
+
+.status {
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+.status-active {
+  display: inline-block;
+  background-color: $green;
+  border-radius: 999px;
+}
+
+.status-inactive {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid $red-dark;
+}

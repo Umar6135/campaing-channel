@@ -1,0 +1,15 @@
+/*------------------------------------*
+	@COMPONENTS #LINKS
+\*------------------------------------*/
+
+.base-links {
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.base-links--no-underline {
+    &:hover {
+        text-decoration: none !important;
+    }
+}

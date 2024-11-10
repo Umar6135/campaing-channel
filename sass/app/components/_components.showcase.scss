@@ -1,0 +1,38 @@
+/*------------------------------------*
+	@COMPONENTS #SHOWCASE
+\*------------------------------------*/
+
+.showcase-wrap {
+    border-radius: 3px;
+    background-color: $white;
+}
+
+.showcase {
+    padding: 40px 40px 30px 40px;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid rgba(198, 204, 205, 0.5);
+    }
+}
+.showcase__lead {
+    color: $black-light;
+    font-family: $bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.showcase__lead--alt {
+    padding-left: 33px;
+    margin-bottom: 30px;
+}
+
+.showcase__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

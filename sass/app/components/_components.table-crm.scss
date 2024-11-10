@@ -1,0 +1,115 @@
+/*------------------------------------*
+    @COMPONENTS #TABLE-CRM
+    This is modified version of table--alt
+\*------------------------------------*/
+
+.table--crm {
+  border: none !important;
+  margin-bottom: 30px;
+}
+
+.table--crm .tr--lg td {
+  padding: 20px 16px;
+}
+
+.table--crm thead th {
+  border: none !important;
+  //padding: 10px 24px;
+  font-size: 12px !important;
+  font-family: 'Proxima Nova Bold';
+  text-transform: uppercase;
+  color: #5d6975 !important;
+  background: #f5f6f7;
+  //border-radius: 4px 4px 0px 0px;
+  //min-height: 40px;
+  // does not exist in table--alt
+  vertical-align: middle;
+}
+
+.table--crm thead th:last-child {
+  text-align: right;
+  //display: -webkit-box;
+  //display: -ms-flexbox;
+  //display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.table--crm tbody tr {
+  border-bottom: 1px solid #e7e9eb;
+  background-color: transparent !important;
+}
+
+.table--crm tbody tr td {
+  border: none !important;
+  text-align: left !important;
+  //padding: 10px 24px;
+  font-size: 14px;
+  vertical-align: middle;
+
+  .checkbox__label::after {
+    height: 18px;
+    left: 2px;
+    cursor: pointer;
+  }
+}
+
+.table--crm tbody tr td:hover {
+  cursor: pointer;
+}
+
+.table--crm tbody tr td:first-child {
+  font-family: 'Proxima Nova Bold';
+  //line-height: 20px;
+  color: #202b38;
+}
+
+.table--crm tbody tr td:last-child {
+  text-align: right !important;
+}
+
+.table--crm tbody tr td .table__label {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.table--crm tbody tr td .table__label:hover {
+  cursor: pointer;
+}
+
+.table--crm tbody tr td .icon-dots {
+  color: #8e9aa1 !important;
+  opacity: 0.5;
+}
+
+.table--crm tbody tr td .icon {
+  width: 20px;
+  height: 20px;
+  color: #07c27d;
+}
+
+.table--crm tbody tr td .icon-x,
+.table--crm tbody tr td .icon-open-new {
+  width: 15px;
+  height: 15px;
+  color: #aab3b8;
+}
+
+.table--crm tbody tr td .icon-bolt {
+  height: 14px;
+  color: #324047;
+}
+
+//.table--crm tbody tr .td--alt {
+//  padding: 8px 16px;
+//}
+
+.table--crm tbody tr .td--alt .avatar {
+  margin-right: 8px;
+}
+
+.table--crm tbody tr:hover {
+  cursor: pointer;
+  background-color: #edf5fd !important;
+}

@@ -1,0 +1,156 @@
+/* ------------------------------------*
+	@COMPONENTS #RADIO
+\*------------------------------------ */
+.radio-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    //margin-bottom: 15px;
+}
+
+.radio-wrap--col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.radio-wrap--col > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.radio:not(:last-child) {
+    margin-right: 30px;
+}
+
+.radio input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.radio span {
+    font-family: "Proxima Nova Regular";
+    font-size: 16px;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.radio span::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 2px solid #8e9aa1;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.radio input:checked + span::before {
+    background-color: #fff;
+    border: 6px solid #0088C8;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.radio--gender span {
+    color: rgba(29, 33, 35, 0.5);
+    font-family: "Proxima Nova Regular";
+    font-size: 15px;
+    line-height: 1.3;
+    z-index: 1;
+    min-width: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.radio--gender span::before {
+    content: '';
+    width: 70px;
+    height: 32px;
+    border-radius: 0;
+    border: 1px solid #c6cccd;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.radio--gender:not(:last-child) {
+    margin-right: 0;
+}
+
+.radio--gender:first-child span::before {
+    border-radius: 3px 0 0 3px;
+    border-right: none !important;
+}
+
+.radio--gender:last-child span::before {
+    border-radius: 0 3px 3px 0;
+    border-left: none !important;
+}
+
+.radio--gender input:checked + span {
+    color: #1D2123;
+}
+
+.radio--gender input:checked + span::before {
+    border: 1px solid #c6cccd;
+    background-color: #e7eaeb;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.radio--alt span::before {
+    border: 2px solid #8f999d;
+}
+
+.radio--alt input:checked + span::before {
+    background-color: #fff;
+    border: 2px solid #0088C8;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.radio--alt input:checked + span::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: #0088C8;
+    position: absolute;
+    top: 7px;
+    left: 4px;
+}

@@ -1,0 +1,94 @@
+/*------------------------------------*
+	@COMPONENTS #COUNTER
+\*------------------------------------*/
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .counter-1 {
+        flex: 1;
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    .counter-2 {
+        flex: 1;
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .counter-3 {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.counter__text {
+    color: $navy;
+    margin-bottom: 0;
+    span {
+        background-color: $white;
+        width: 63px;
+        border: 1px solid #dee2e6;
+        border-radius: 3px;
+        &.counter-no-border {
+            border: none;
+        }
+    }
+}
+
+.counter__form {
+    display: flex;
+    align-items: center;
+
+    .form-control {
+        width: 64px;
+    }
+}
+
+.counter__text--alt {
+    color: $navy-light;
+}
+
+.counter--alt {
+    .counter__text {
+        font-size: 14px;
+    }
+
+    .select2-container {
+        width: 50px !important;
+    }
+
+    .select2-selection--single {
+        border: none !important;
+    }
+}
+
+.counter--transparent {
+    .counter__form {
+        .selection--single {
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        .select2-selection--single {
+            border: none !important;
+            background-color: transparent !important;
+        }
+
+        .select2-container--above {
+            width: 50px !important;
+        }
+    }
+}
+
+.counter--sm {
+    padding: 20px 0px;
+}

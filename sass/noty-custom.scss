@@ -1,0 +1,47 @@
+$noty-theme: 'noty_theme__nest';
+
+.#{$noty-theme}.noty_type__alert {
+    background-color: #fff;
+    color: #1d1d1d;
+}
+.#{$noty-theme}.noty_type__success {
+    background-color: $color-active;
+}
+.#{$noty-theme}.noty_type__warning {
+    background-color: $color-upcoming;
+}
+.#{$noty-theme}.noty_type__error {
+    background-color: $color-error;
+}
+.#{$noty-theme}.noty_type__information {
+    background-color: #78C5E7;
+}
+
+.#{$noty-theme}.noty_bar {
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px 0;
+
+    .noty_body {
+        font-size: 1rem;
+    }
+    &.noty_type__alert .noty_body {
+        text-shadow: none;
+    }
+
+    .noty_buttons {
+        button:first-child {
+            margin-right: 10px;
+        }
+    }
+
+}
+// to fix overlapping notifications issue
+.#{$noty-theme}.noty_bar:nth-child(n+1) {
+    position: relative !important;
+}
+
+.noty-custom-cancel-btn {
+    background-color: #fff !important;
+    color: #656b6f;
+    border: 1px solid #aab3b9;
+}

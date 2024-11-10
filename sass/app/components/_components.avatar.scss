@@ -1,0 +1,298 @@
+/* ------------------------------------*
+	@COMPONENTS #AVATAR
+\*------------------------------------ */
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background-color: $red;
+    border-radius: 100%;
+    color: $white;
+    font-size: 18px;
+    font-family: $bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.avatar--lg {
+    width: 41px;
+    height: 41px;
+}
+
+.avatar--xl {
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+    font-family: $base-font;
+}
+
+.avatar--purple {
+    background-color: $purple;
+    border-color: $purple;
+}
+
+.avatar--pink {
+    background-color: $pink;
+    border-color: $pink;
+}
+
+.avatar--green {
+    background-color: $green;
+
+    &:hover {
+        background-color: darken($green, 10) !important;
+    }
+}
+
+.avatar--grey {
+    color: $grey;
+
+    &:hover {
+        color: darken($grey, 10) !important;
+    }
+}
+
+.avatar--outline {
+    background-color: transparent !important;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.profile-image-container {
+    .profile-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        pointer-events: auto;
+        p {
+            margin-bottom: 10px;
+        }
+        em {
+            display: inline-block;
+        }
+    }
+    .hide-on-image * {
+        pointer-events: none;
+    }
+    .upload-progress-container {
+        min-height: 30px;
+        position: relative;
+        top: -8px;
+    }
+    .progress {
+        margin: 0;
+        .progress-bar {
+            background-color: #4ab2ff;
+        }
+    }
+}
+
+.avatar-wrap {
+    display: flex;
+    align-items: center;
+}
+.avatar--xs {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.avatar--xxl {
+    width: 80px;
+    height: 80px;
+}
+.avatar-type {
+    &.btn {
+        width: 165px;
+        padding: 0;
+        margin: 0;
+    }
+}
+.avatar-status {
+    width: 75px;
+}
+.avatar-wrap-link {
+    color: inherit;
+    #{$states} {
+        color: inherit;
+    }
+}
+.avatar-badge {
+    #{$states} {
+        text-decoration: none;
+    }
+}
+.avatar--disabled {
+    background-color: $red;
+    border-color: $red;
+    color: #fff;
+    #{states} {
+        color: #fff;
+    }
+    &:hover:not(.unclickable) {
+        background-color: darken($red, 10) !important;
+    }
+}
+
+.avatar--color-disabled {
+    color: $red;
+}
+
+.avatar--color-active {
+    color: $bgr;
+}
+
+.avatar--active {
+    background-color: $bgr;
+    border-color: $bgr;
+    color: #fff;
+    #{states} {
+        color: #fff;
+    }
+    &:hover:not(.unclickable) {
+        background-color: darken($bgr, 10) !important;
+    }
+}
+
+.avatar-label-inverted {
+    min-width: 74px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 5px;
+    background-color: transparent;
+    color: #8e9aa1 !important;
+    border: 1px solid #8e9aa1;
+    &:hover:not(.unclickable) {
+        color: darken(#8e9aa1, 10);
+        border-color: darken(#8e9aa1, 10);
+        cursor: pointer;
+    }
+    &.dm-sm {
+        font-size: 8px;
+    }
+}
+
+$avatarColors: (
+    'red': #e56c5b,
+    'blue': #00aee0,
+    'pink': #af5a9e,
+    'pink-light': #ee59b3,
+    'orange': #ffa95b,
+    'green': #00b033,
+    'grey': #8e9aa1,
+    'purple': #897cc0,
+);
+
+@each $name, $color in $avatarColors {
+    .avatar-badge-#{$name} {
+        .avatar-type {
+            color: #fff !important;
+            background-color: $color;
+            border-color: $color;
+            &:hover:not(.unclickable) {
+                color: #fff !important;
+                background-color: darken($color, 10) !important;
+                cursor: pointer;
+            }
+        }
+        .avatar-icon {
+            width: 40px;
+            height: 40px;
+            color: $color !important;
+            background-color: transparent !important;
+            border: 2px solid $color !important;
+            i {
+                &:not(.avatar-default-size) {
+                    width: 14px;
+                    height: 12px;
+                }
+                &.avatar-default-size {
+                    padding: 2px;
+                }
+            }
+            &:hover:not(.unclickable) {
+                i {
+                    color: #fff !important;
+                }
+
+                background-color: $color !important;
+                border-color: $color !important;
+                cursor: pointer;
+            }
+            &.avatar-icon-red {
+                color: $red !important;
+                border-color: $red !important;
+                &:hover:not(.unclickable) {
+                    background-color: $red !important;
+                    border-color: $red !important;
+                }
+            }
+            &.avatar-icon-green {
+                color: #00b033 !important;
+                border-color: #00b033 !important;
+                &:hover:not(.unclickable) {
+                    background-color: #00b033 !important;
+                    border-color: #00b033 !important;
+                }
+            }
+        }
+    }
+
+    .avatar-label-#{$name} {
+        min-width: 74px;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding-bottom: 1px;
+        padding-top: 3px;
+        color: #fff !important;
+        background-color: $color;
+        border: 1px solid $color;
+        &:hover:not(.unclickable) {
+            color: #fff !important;
+            background-color: darken($color, 10) !important;
+            cursor: pointer;
+        }
+        &.dm-sm {
+            font-size: 8px;
+        }
+    }
+
+    .avatar-badge-inverted-#{$name} {
+        .avatar-type {
+            background-color: transparent !important;
+            color: $color !important;
+            border: 1px solid $color;
+            &:hover:not(.unclickable) {
+                color: darken($color, 10) !important;
+                border-color: darken($color, 10) !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .dm-circle-#{$name} {
+        .icon {
+            color: darken($color, 10);
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover:not(.unclickable) {
+            border-color: darken($color, 10) !important;
+            .icon {
+                color: darken($color, 10);
+            }
+            cursor: pointer;
+        }
+    }
+}

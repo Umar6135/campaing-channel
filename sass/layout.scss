@@ -1,0 +1,682 @@
+body {
+    background-color: #ebf0f3;
+}
+
+body .page-container {
+    background-color: #ebf0f3;
+    min-height: 100vh;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container-fluid .page-wrapper {
+    min-height: 100vh;
+    padding-bottom: 120px;
+}
+
+.page-content-wrapper {
+    max-width: $page-body-width;
+    margin: auto;
+
+    & > .row > .card {
+        border: none;
+    }
+}
+
+/*-----------campaign subnav---------------------------------------------------*/
+.round {
+    width: 10em;
+    height: 10em;
+    border: 2px solid red;
+    border-radius: 50%;
+    line-height: 10em;
+    text-align: center;
+    background: mistyrose;
+}
+
+.page-subnav ul li .active {
+    color: #4e5563 !important;
+    font-weight: bold;
+}
+
+/*-----------footer---------------------------------------------------*/
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: #ebf0f3;
+    margin-top: -120px;
+}
+
+.footer section {
+    height: 60px;
+    max-width: 1470px;
+    padding: 0 40px;
+    margin: auto;
+    position: relative;
+}
+
+.footer-content {
+    padding: 25px 25px 0 25px;
+    color: #9eabb3;
+    font-size: 13px;
+}
+
+.footer-action {
+    color: #d0614e;
+}
+
+/*-----------!footer--------------------------------------------------*/
+
+/*-----------form elements--------------------------------------------*/
+.dropdown-toggle::after {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.select-border {
+    border: 1px solid #c6cccd;
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+}
+/*
+.example .btn-toggle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-toggle {
+    margin: 0 4rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    color: #6b7381;
+    background: #bdc1c8;
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+    outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+    line-height: 1.5rem;
+    width: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+    left: 1.6875rem;
+    transition: left 0.25s;
+}
+.btn-toggle.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+    line-height: -0.5rem;
+    color: #fff;
+    letter-spacing: 0.75px;
+    left: 0.4125rem;
+    width: 2.325rem;
+}
+.btn-toggle.btn-sm:before {
+    text-align: right;
+}
+.btn-toggle.btn-sm:after {
+    text-align: left;
+    opacity: 0;
+}
+.btn-toggle.btn-sm.active:before {
+    opacity: 0;
+}
+.btn-toggle.btn-sm.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-xs:before,
+.btn-toggle.btn-xs:after {
+    display: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+    color: #6b7381;
+}
+.btn-toggle.active {
+    background-color: #67d88e;
+}
+.btn-toggle.btn-lg {
+    margin: 0 5rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+}
+.btn-toggle.btn-lg:focus,
+.btn-toggle.btn-lg.focus,
+.btn-toggle.btn-lg:focus.active,
+.btn-toggle.btn-lg.focus.active {
+    outline: none;
+}
+.btn-toggle.btn-lg:before,
+.btn-toggle.btn-lg:after {
+    line-height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle.btn-lg > .handle {
+    position: absolute;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 1.875rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-lg.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.btn-lg.active > .handle {
+    left: 2.8125rem;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-lg.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.btn-lg.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-lg.btn-sm:before,
+.btn-toggle.btn-lg.btn-sm:after {
+    line-height: 0.5rem;
+    color: #fff;
+    letter-spacing: 0.75px;
+    left: 0.6875rem;
+    width: 3.875rem;
+}
+.btn-toggle.btn-lg.btn-sm:before {
+    text-align: right;
+}
+.btn-toggle.btn-lg.btn-sm:after {
+    text-align: left;
+    opacity: 0;
+}
+.btn-toggle.btn-lg.btn-sm.active:before {
+    opacity: 0;
+}
+.btn-toggle.btn-lg.btn-sm.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-lg.btn-xs:before,
+.btn-toggle.btn-lg.btn-xs:after {
+    display: none;
+}
+.btn-toggle.btn-sm {
+    margin: 0 0.5rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+.btn-toggle.btn-sm:focus,
+.btn-toggle.btn-sm.focus,
+.btn-toggle.btn-sm:focus.active,
+.btn-toggle.btn-sm.focus.active {
+    outline: none;
+}
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after {
+    line-height: 1.5rem;
+    width: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle.btn-sm > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-sm.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.btn-sm.active > .handle {
+    left: 1.6875rem;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-sm.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.btn-sm.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-sm.btn-sm:before,
+.btn-toggle.btn-sm.btn-sm:after {
+    line-height: -0.5rem;
+    color: #fff;
+    letter-spacing: 0.75px;
+    left: 0.4125rem;
+    width: 2.325rem;
+}
+.btn-toggle.btn-sm.btn-sm:before {
+    text-align: right;
+}
+.btn-toggle.btn-sm.btn-sm:after {
+    text-align: left;
+    opacity: 0;
+}
+.btn-toggle.btn-sm.btn-sm.active:before {
+    opacity: 0;
+}
+.btn-toggle.btn-sm.btn-sm.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-sm.btn-xs:before,
+.btn-toggle.btn-sm.btn-xs:after {
+    display: none;
+}
+.btn-toggle.btn-xs {
+    margin: 0 0;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 1rem;
+    width: 2rem;
+    border-radius: 1rem;
+}
+.btn-toggle.btn-xs:focus,
+.btn-toggle.btn-xs.focus,
+.btn-toggle.btn-xs:focus.active,
+.btn-toggle.btn-xs.focus.active {
+    outline: none;
+}
+.btn-toggle.btn-xs:before,
+.btn-toggle.btn-xs:after {
+    line-height: 1rem;
+    width: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle.btn-xs > .handle {
+    position: absolute;
+    top: 0.125rem;
+    left: 0.125rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+    background: #fff;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-xs.active {
+    transition: background-color 0.25s;
+}
+.btn-toggle.btn-xs.active > .handle {
+    left: 1.125rem;
+    transition: left 0.25s;
+}
+.btn-toggle.btn-xs.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.btn-xs.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-xs.btn-sm:before,
+.btn-toggle.btn-xs.btn-sm:after {
+    line-height: -1rem;
+    color: #fff;
+    letter-spacing: 0.75px;
+    left: 0.275rem;
+    width: 1.55rem;
+}
+.btn-toggle.btn-xs.btn-sm:before {
+    text-align: right;
+}
+.btn-toggle.btn-xs.btn-sm:after {
+    text-align: left;
+    opacity: 0;
+}
+.btn-toggle.btn-xs.btn-sm.active:before {
+    opacity: 0;
+}
+.btn-toggle.btn-xs.btn-sm.active:after {
+    opacity: 1;
+}
+.btn-toggle.btn-xs.btn-xs:before,
+.btn-toggle.btn-xs.btn-xs:after {
+    display: none;
+}
+.btn-toggle.btn-secondary {
+    color: #6b7381;
+    background: #bdc1c8;
+}
+.btn-toggle.btn-secondary:before,
+.btn-toggle.btn-secondary:after {
+    color: #6b7381;
+}
+.btn-toggle.btn-secondary.active {
+    background-color: #ff8300;
+}
+*/
+
+.accordion-border-left {
+    border-left: solid 1px #4f6571;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.accordion-border-number-point {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-color: #4f6571;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-left: -15.5px;
+    margin-top: -5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.add-wrap {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+
+    i {
+        color: #62d684;
+        font-size: 1.9em;
+        cursor: pointer;
+        background: white;
+    }
+}
+
+.vertical-center {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.danger-notice i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+/*----------!form_elements--------------------------------------------*/
+
+/* gathering_information -> Lead Form */
+.gi-form .arrow {
+    position: relative;
+}
+
+.gi-form .arrow:before,
+.arrow:after {
+    content: "";
+    position: absolute;
+}
+
+.gi-form .up-arrow:before {
+    left: 47%;
+    top: -15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #dee2e6;
+}
+
+.gi-form .addon-field {
+    position: relative;
+}
+
+.gi-form .up-arrow label {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.gi-form .delete-wrap {
+    position: absolute;
+    top: 2px;
+    right: -37px;
+    &.multi-row {
+        top: 30px;
+        right: -37px;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        .lintop {
+            border-right: 1px solid #8e9aa1;
+            border-top: 1px solid #8e9aa1;
+            height: 21px;
+            width: 14px;
+            position: absolute;
+            top: 13px;
+            right: 13px;
+        }
+        .linbot {
+            border-right: 1px solid #8e9aa1;
+            border-bottom: 1px solid #8e9aa1;
+            height: 21px;
+            width: 14px;
+            position: absolute;
+            top: 68px;
+            right: 13px;
+        }
+    }
+}
+/*----------!gathering_information -> Lead Form-----------------------*/
+
+/*--------------------Fonts--------------------------------------------*/
+/*--------------------!Fonts-------------------------------------------*/
+
+.accordion-item-title {
+    margin: auto;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #324047;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.section-subtitle {
+    color: #324047;
+    font-weight: bold;
+    font-size: 1.0625rem;
+    line-height: 1.1875rem;
+}
+.section-subtitle-sm {
+    color: #324047;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.section-text {
+    color: #74848c;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.pre-input-text {
+    color: #4f6571;
+    font-size: 15px;
+}
+
+.input-labels {
+    color: #324047;
+    font-size: 14.5px;
+    font-weight: bold;
+    line-height: 19px;
+    &.light {
+        color: #4f6571;
+    }
+}
+
+.input-a {
+    font-size: 15px;
+}
+
+.pre-button-15 {
+    font-size: 15px;
+}
+
+.pinned-link {
+    margin: auto;
+    margin-left: 0;
+}
+
+.disable-link {
+    color: #ca3f26;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.disable-link:hover {
+    text-decoration: none;
+    color: #a43924;
+    font-size: 15px;
+    line-height: 19px;
+}
+.disable-link.btn-outline-danger:hover {
+    color: #fff;
+}
+
+.delete-link {
+    color: #ca3f26;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.delete-link:hover {
+    text-decoration: none;
+    color: #a43924;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.pe-none-custom {
+    pointer-events: none;
+    color: #6c757d;
+}
+
+.pe-none-custom-required {
+    pointer-events: none !important;
+    background-color: #e9ecef !important;
+    opacity: 1;
+}
+
+.minimize-link,
+.top-link {
+    color: #4f6571;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.minimize-link:hover,
+.top-link:hover {
+    text-decoration: none;
+    color: #3d4d58;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+/* TODO: update this to use a different class, remove !important, etc */
+.btn-primary,
+.btn-info {
+    background-color: #00aee0 !important;
+    border-color: #00aee0 !important;
+}
+
+.btn-outline-primary {
+    color: #00aee0 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: #00aee0 !important;
+}
+
+.btn-primary:hover,
+.btn-info:hover,
+.btn-outline-primary:hover {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+// put these somewhere else
+.w-33 {
+    width: 33.33%;
+}
+
+.lh-1 {
+    line-height: 1;
+}

@@ -1,0 +1,106 @@
+/*------------------------------------*
+	@COMPONENTS #BLOCK
+\*------------------------------------*/
+
+.block {
+    height: 100% !important;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1 !important;
+
+    &:not(:first-child) {
+        border-left: 1px solid $grey-lighter;
+        padding-left: 15px;
+    }
+
+    .online {
+        font-size: 13px !important;
+    }
+}
+
+.block-alt {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    background: $white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04), inset 0px -1px 0px #e7e9eb;
+    border-radius: 4px;
+    padding: 10px 16px;
+
+    .block__body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        margin-right: auto;
+    }
+
+    .block__icon {
+        width: 24px;
+        height: 24px;
+        color: $black;
+    }
+
+    .block__number {
+        font-size: 28px;
+        line-height: 33px;
+        text-align: right;
+        letter-spacing: -0.2px;
+        color: #202b38;
+    }
+
+    .block__name {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: $bold;
+        color: #202b38;
+    }
+}
+
+.block--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+
+    .block__title {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #5d6975;
+        letter-spacing: 1.71px;
+
+        strong {
+            font-size: 40px;
+            line-height: 0.8;
+            text-align: center;
+            letter-spacing: -0.2px;
+            color: #202b38;
+            display: block;
+        }
+    }
+}
+
+.block__title {
+    color: $black-light;
+    font-size: 14px;
+    font-family: $base-font;
+    margin-bottom: 16px;
+
+    strong {
+        color: $navy;
+        font-size: 30px;
+        display: block;
+    }
+}
+
+.block__text {
+    font-size: 13px;
+    font-family: $light;
+    color: $navy-lighter;
+    font-style: italic;
+}

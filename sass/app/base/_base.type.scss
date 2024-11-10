@@ -1,0 +1,62 @@
+/*------------------------------------*
+    @BASE #TYPE
+\*------------------------------------*/
+
+$h1: 2.25rem;   // 36px
+$h2: 1.5rem;    // 24px
+$h3: 1.25rem;   // 20px
+$h4: 1.125rem;  // 18px
+$h5: 1rem;      // 16px
+$h6: .875rem;   // 14px
+
+$htitles: $h1, $h2, $h3, $h4, $h5, $h6;
+
+@for $j from 1 through length($htitles) {
+    h#{$j}, .h#{$j} {
+       font-size: (nth($htitles, $j));
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+dl {
+    dd {
+        margin-bottom: 0;
+    }
+}
+
+img,
+p,
+ul,
+ol,
+dl,
+pre,
+blockquote {
+    margin-bottom: $space;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+hr {
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid $border;
+    height: 1px;
+    margin: $space 0;
+    &.profile-image-hr {
+        margin:0 0 30px;
+    }
+}

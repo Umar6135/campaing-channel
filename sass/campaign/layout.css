@@ -1,0 +1,149 @@
+/*---------------------------------------campigns header------------------------------------------------------------*/
+
+header .page-subnav {
+    max-width: 1470px;
+    margin:auto;
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+    padding: 15px 40px 15px 40px;
+}
+
+header .page-subnav .navbar-nav {
+    flex-direction: row;
+}
+
+header .header-back-link {
+    text-decoration: none;
+    color: black;
+}
+
+header .header-back-link:hover {
+    text-decoration: none;
+}
+
+.page-heading-multiline-first {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.page-heading-multiline-first .icon-left {
+    font-size: 0.65em;
+    margin-right: 15px;
+}
+
+.container-fluid header .page-subnav a {
+    color: rgb(157, 164, 169);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.container-fluid header .page-subnav a:hover, .container-fluid header .selected {
+    cursor: pointer;
+    color: #324047;
+    text-decoration: none;
+}
+
+.page-subnav-campaign-id {
+    font-size: 0.9em;
+    color: #898d8e;
+}
+
+
+/*---------------------------------------campaigns_stats-------------------------------------------------------------*/
+
+.stats-content .col, .stats-content .col-md-7 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.stats-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.livefeed_box .header{
+    background-color: #324047;
+    color: white;
+    padding: 14px 16px 10px;
+    font-size: 14px;
+}
+
+/* fixed header table sneakyness */
+table.table-fixed {
+    font-size: 0.8125rem;
+}
+table.table-fixed tbody {
+    display:block;
+    height:210px;
+    overflow-y:scroll;
+}
+table.table-fixed thead, table.table-fixed tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+table.table-fixed thead {
+    /* set this with javascript since its different between oss & browser */
+    /*width: calc( 100% - 15px )*/
+}
+table.table-fixed th:last-child {
+    border-right: none;
+}
+/* measure scrollbar size for fixed header table sticky row */
+.scrollbar-measure {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    position: absolute;
+    top: -9999px;
+}
+
+/* tablesort styles */
+table.table-fixed th[role=columnheader]:not(.no-sort) {
+    cursor: pointer;
+    position: relative;
+}
+table.table-fixed th[role=columnheader]:not(.no-sort):after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-width: 0 4px 4px;
+    border-style: solid;
+    border-color: #404040 transparent;
+    visibility: hidden;
+    opacity: 0;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+table.table-fixed th[aria-sort=ascending]:not(.no-sort):after {
+    border-bottom: none;
+    border-width: 4px 4px 0;
+}
+table.table-fixed th[aria-sort]:not(.no-sort):after {
+    visibility: visible;
+    opacity: 0.4;
+}
+table.table-fixed th[role=columnheader]:not(.no-sort):hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+table.table-fixed  th {
+    color: #555;
+}
+
+/*---------------------------------------!campaigns_stats------------------------------------------------------------*/
+
+.text-muted .input-labels, .text-muted .pre-input-text {
+    color: #6c757d;
+}
+
+.inside-form-text {
+    font-size: 15px;
+    line-height: 19px;
+}

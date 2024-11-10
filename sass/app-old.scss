@@ -1,0 +1,64 @@
+// libraries & variable overrides
+@import "_mixins";
+@import "fonts";
+@import "var-overrides";
+
+// bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// custom dm vars
+@import "variables";
+@import "typography";
+
+// other libraries
+@import "bootstrap-toggle";
+@import "../vendor/selectize-bootstrap-4-style/selectize.bootstrap4";
+@import '../../node_modules/flatpickr/dist/themes/material_blue';
+@import '../../node_modules/@simonwep/pickr/src/scss/themes/classic';
+@import "../../node_modules/react-toastify/dist/ReactToastify";
+@import "../../node_modules/react-input-range/lib/css/index";
+
+@import "../../node_modules/noty/lib/noty";
+@import "../../node_modules/noty/lib/themes/nest";
+@import "noty-custom";
+@import "sortable-js-custom";
+
+@import "fontastic";
+
+// all library style overrides
+@import "style-overrides";
+
+// page/component specific scss
+@import "layout";
+@import "navbar";
+
+// campaign
+@import "campaign/layout";
+@import "campaign/header";
+@import "campaign/channels-navbar";
+@import "campaign/channels-content";
+@import "campaign/channels-digital";
+@import "campaign/accordion";
+@import "campaign/stats";
+@import "campaign/stats-new";
+@import "campaign/gather-info";
+@import "campaign/notifications";
+@import "stats_email";
+@import "campaign/addons";
+@import "campaign/list-manager";
+
+//lead
+@import "lead";
+
+// SETTINGS
+@import 'campaign/settings/settings.variables';
+
+// COMPONENTS
+@import "campaign/components/components.tabs";
+
+// OBJECTS
+@import "campaign/objects/objects.chat-bubble";
+@import "campaign/objects/objects.date-time-picker";
+
+@import "app/components/components.directmail";
+@import "app/components/components.stepper";

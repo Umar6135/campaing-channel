@@ -1,0 +1,72 @@
+/*------------------------------------*
+    @OBJECTS #CHAT_BUBBLE
+\*------------------------------------*/
+
+.chat-bubble {
+  position: relative;
+  border-radius: 10px;
+  padding: 9px 13px 11px;
+  margin-top: 0.5rem;
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 15px;
+
+    a {
+      color: #0087FF;
+      pointer-events: none;
+    }
+  }
+
+  $chat-bubble-arrow-size: 7px;
+
+  &--incoming {
+    background: $chat-bubble-in-color;
+
+    &:after {
+      border: $chat-bubble-arrow-size solid transparent;
+      border-right-color: $chat-bubble-in-color;
+      margin-left: -$chat-bubble-arrow-size;
+      border-left: 0;
+      border-bottom: 0;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 6px;
+      width: 0;
+      height: 0;
+      margin-top: -14px;
+    }
+
+
+  }
+
+  &--outgoing {
+    color: #fff;
+    background: $chat-bubble-out-color;
+    margin-right: $chat-bubble-arrow-size;
+
+    p {
+      a {
+        color: #fff;
+      }
+    }
+
+    &:after {
+      border: $chat-bubble-arrow-size solid transparent;
+      border-left-color: $chat-bubble-out-color;
+      margin-right: -$chat-bubble-arrow-size;
+      border-right: 0;
+      border-bottom: 0;
+      content: '';
+      position: absolute;
+      left: initial;
+      right: 1px;
+      bottom: 6px;
+      width: 0;
+      height: 0;
+      margin-top: -14px;
+    }
+  }
+}

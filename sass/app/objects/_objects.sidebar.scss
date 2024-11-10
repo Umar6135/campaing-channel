@@ -1,0 +1,88 @@
+/*------------------------------------*
+    @OBJECTS #SIDEBAR
+\*------------------------------------*/
+
+.sidebar {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    bottom: 60px;
+    width: 300px;
+    transition: width 0.45s;
+}
+
+.sidebar__container {
+    display: flex;
+    color: #666;
+    flex-direction: column;
+    height: 100%;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    user-select: none;
+
+    .selectize-input {
+        position: static;
+    }
+}
+
+.sidebar__header {
+    display: flex;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eeeeee;
+    font-size: small;
+}
+
+.sidebar__content {
+    overflow-x: auto;
+
+    &-withFooter {
+        @extend .sidebar__content;
+        height: calc(100vh - 250px);
+    }
+}
+
+.sidebar__footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+}
+
+.widget-library-item {
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
+.widget__endpoint {
+    display: inline-block;
+    margin-right: 15px;
+    min-height: 25px;
+    background: #5b5b5b;
+    line-height: 20px;
+    color: white;
+    border-radius: 2px;
+    padding: 3px 5px;
+    z-index: 1;
+    position: relative;
+}
+
+.widget-endpoint--no-next {
+    border-left: 3px solid #5b5b5b;
+    height: 22px;
+    position: absolute;
+}

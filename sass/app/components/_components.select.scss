@@ -1,0 +1,77 @@
+/*------------------------------------*
+	@COMPONENTS #SELECT
+\*------------------------------------*/
+
+.select2-selection {
+    outline: none;
+}
+
+.select2-dropdown {
+    margin-top: 2px;
+    border: 1px solid $grey-light !important;
+    box-shadow: 0 2px 4px rgba(50, 64, 71, 0.48);
+    border-radius: 3px !important;
+    padding: 4px;
+}
+
+.select2-selection__arrow {
+    top: 4px !important;
+}
+
+.select2-results__option {
+    background-color: transparent !important;
+    color: $black-light !important;
+    margin-bottom: 4px !important;
+    padding: 5px !important;
+
+    &:hover {
+        background-color: #ebf0f3 !important;
+        border-radius: 3px !important;
+        opacity: 0.7 !important;
+        cursor: pointer !important;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &[aria-selected='true'] {
+        color: $blue !important;
+    }
+}
+
+.select2-selection--single {
+    height: 32px !important;
+    border: 1px solid $grey-light !important;
+
+    .form-control--lg + .select2 & {
+        height: 36px !important;
+    }
+}
+
+.select2-selection__rendered {
+    color: $black-light !important;
+    line-height: 31px !important;
+
+    .form-control--lg + .select2 & {
+        line-height: 35px !important;
+    }
+}
+
+.new-campaigns-select {
+    display: flex;
+
+    select,
+    input {
+        flex: 1;
+    }
+    .icon-help-circled:before {
+        position: relative !important;
+        left: 5px !important;
+    }
+}
+
+.dm-selectize-thin {
+    width: 25%;
+    margin: 0.5rem;
+}

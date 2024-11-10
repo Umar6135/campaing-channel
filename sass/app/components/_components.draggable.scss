@@ -1,0 +1,28 @@
+/*------------------------------------*
+	@COMPONENTS #DRAGGABLE
+\*------------------------------------*/
+
+.draggable {
+    position: absolute;
+    cursor: move;
+    user-select: none;
+}
+
+.node {
+    max-width: 350px;
+    border-radius: 0.3rem;
+}
+
+.node .card-body {
+    padding: 0.5rem;
+}
+
+.node .card-header {
+    background-color: #e0f4fa;
+    padding: 0.5rem 1rem;
+}
+
+.node--selected {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #0279ff, 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}

@@ -1,0 +1,109 @@
+/*------------------------------------*
+	@TRUMPS #HELPERS
+\*------------------------------------*/
+
+.clean {
+    margin: 0;
+    padding: 0;
+}
+
+//NO TRANSITION CLASS
+.no-transition {
+    &,
+    * {
+        transition: none !important;
+    }
+}
+
+//NICER AMPERSAND
+.amp {
+    font-family: Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+//NOWRAP
+.nowrap {
+    white-space: nowrap;
+}
+
+@for $i from 12 through 16 {
+    .dm-fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+.dm-green-label {
+    @include dmHighlight('#50d376');
+    &.mini {
+        font-size: 8px;
+        vertical-align: super;
+        padding-top: 5px;
+    }
+}
+
+.dm-red-label {
+    @include dmHighlight('#f3666a');
+    &.mini {
+        font-size: 8px;
+        vertical-align: super;
+        padding-top: 5px;
+    }
+}
+
+.dm-grey-label {
+    @include dmHighlight('#8e9aa1');
+    &.mini {
+        font-size: 8px;
+        vertical-align: super;
+        padding-top: 5px;
+    }
+}
+
+.profile-domain-expires {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.unclickable {
+    color: inherit;
+    text-decoration: none;
+    cursor: auto;
+    #{$states} {
+        color: inherit;
+        text-decoration: none;
+        cursor: auto;
+    }
+}
+
+.cursor-pointer {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.dm-spinner {
+    &.dm-spinner-xl {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 13%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 130px;
+        right: 0;
+        z-index: 100;
+        img {
+            z-index: 101;
+        }
+    }
+    &.spinner-bg {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

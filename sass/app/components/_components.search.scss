@@ -1,0 +1,237 @@
+/*------------------------------------*
+	@COMPONENTS #SEARCH
+\*------------------------------------*/
+
+@mixin searchbar {
+    position: relative;
+    border-radius: 3px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+
+    .icon {
+        @include centerV;
+        left: 10px;
+        width: 15px;
+        height: 23px;
+        color: #4f6571;
+        &.dm-sm {
+            height: 17px;
+        }
+    }
+
+    input {
+        border: none;
+        width: 100%;
+    }
+}
+
+.show {
+    .subheader__title {
+        color: $grey;
+    }
+}
+
+.search {
+    position: relative;
+
+    .dropdown-toggle {
+        &::after {
+            display: none !important;
+        }
+    }
+
+    form {
+        //position: relative;
+        padding-right: 20px;
+        padding-right: 20px;
+        border-radius: 3px;
+        border: 1px solid $grey-light;
+        background-color: $white;
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            @include centerV;
+            left: 10px;
+            width: 15px;
+            height: 15px;
+        }
+
+        input {
+            padding-left: 40px;
+            border: none;
+            width: 100%;
+        }
+        @include searchbar;
+    }
+
+    .search__title {
+        color: $navy-light;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.92px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .search__content {
+        overflow-y: auto;
+        max-height: 450px;
+    }
+
+    .search__background {
+        overflow-y: auto;
+        height: 430px;
+    }
+
+    .search__list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            color: $black-light;
+            margin-bottom: 10px;
+            padding: 5px;
+
+            &:hover {
+                background-color: #ebf0f3;
+                border-radius: 3px;
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.search--filters {
+    .search__list {
+        li {
+            margin-bottom: 5px;
+            padding: 2px;
+        }
+    }
+}
+
+.algolia-autocomplete {
+    width: 100%;
+}
+.algolia-autocomplete .aa-input,
+.algolia-autocomplete .aa-hint {
+    width: 100%;
+}
+.algolia-autocomplete .aa-hint {
+    color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+}
+.algolia-autocomplete .aa-dropdown-menu .result-header {
+    font-size: 15px;
+    padding: 10px 0 3px 10px;
+    border-bottom: 1px solid #efefef;
+    margin: 0;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #ecf5ff;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-style: normal;
+    background-color: #d3e6fb;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .header {
+    font-size: 15px;
+    margin: 0;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .subtitle {
+    font-size: 11px;
+    margin-left: 2px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .header,
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .subtitle {
+    width: 220px;
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.5px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .buttons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 5px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .buttons .btn {
+    font-size: 12px;
+    background: transparent;
+    color: #666;
+}
+.algolia-autocomplete .aa-dropdown-menu .result-empty {
+    padding: 10px;
+    color: #888;
+}
+
+.campaigns-page {
+    .algolia-autocomplete .aa-dropdown-menu {
+        overflow-y: auto;
+        max-height: 430px;
+    }
+}
+
+.dm-search {
+    @include searchbar;
+    input {
+        &.dm-search-line {
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            outline: 0;
+            box-shadow: none;
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            box-sizing: content-box;
+            background-color: transparent;
+            margin: 0 0 0.5rem 0;
+            padding: 0.8rem 0 0.4rem 25px;
+            height: auto;
+            &:focus {
+                box-shadow: none !important;
+                border-color: rgb(206, 212, 218) !important;
+            }
+        }
+    }
+    .icon {
+        left: 0;
+    }
+}
+
+.dm-empty {
+    margin-bottom: 15px;
+    > div {
+        height: 100%;
+    }
+}
+
+.dm-highlight {
+    color: #007bff;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+.dm-subtitle {
+    font-size: 11px;
+    white-space: nowrap !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

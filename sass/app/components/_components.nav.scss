@@ -1,0 +1,186 @@
+/*------------------------------------*
+	@COMPONENTS #NAV
+\*------------------------------------*/
+
+.dm-nav {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+
+    .nav__link {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        font-size: 13px;
+        font-family: $bold;
+        color: $white;
+        opacity: 0.5;
+        text-transform: uppercase;
+        position: relative;
+        margin-right: 20px;
+
+        &.active {
+            opacity: 1;
+        }
+
+        &:hover {
+            color: $white !important;
+            opacity: 1;
+            text-decoration: none;
+            /*
+      &::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: $blue;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+      }
+      */
+        }
+
+        ._header & {
+            &.active {
+                color: $white;
+                opacity: 1;
+                text-decoration: none;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    background-color: $blue;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }
+        }
+
+        .filters & {
+            color: $navy !important;
+            opacity: 0.5;
+            font-family: $bold;
+            font-size: 15px;
+            text-transform: capitalize;
+            padding: 0px !important;
+            text-align: center;
+
+            &.active {
+                opacity: 1;
+            }
+
+            small {
+                font-family: $light;
+                font-size: 14px;
+
+                &.small-spinner {
+                    font-size: 15px;
+                }
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #main-nav {
+        a.navbar-brand {
+            font-size: 43px;
+        }
+
+        .dropdown {
+            .navbar-name-letter {
+                height: 37.5px;
+                width: 37.5px;
+                border: 2px solid #e56c5b;
+                background: #e56c5b;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 50%;
+                text-align: center;
+                padding: 0;
+                line-height: 35px;
+                display: inline-block;
+                vertical-align: middle;
+                color: #fff;
+                margin-right: 3px;
+                font-style: normal;
+            }
+
+            .navbar-name-company {
+                line-height: 13.3px;
+            }
+
+            .icon-chevron-down {
+                font-size: 21px;
+                margin-left: 12px;
+                margin-right: 3px;
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                a {
+                    font-size: 13.5px;
+                }
+            }
+        }
+    }
+}
+
+.external-nav {
+    color: $white;
+    background: $external-nav--background;
+
+    .external-nav--campaign-name {
+        font-size: 1.4rem;
+    }
+
+    .external-nav--app-name {
+        font-size: 1.3rem;
+    }
+
+    // Nav must have the same size button
+    .btn {
+        width: 5.5rem !important;
+        font-size: 0.9rem;
+    }
+
+    .btn__exit {
+        color: $external-nav--background;
+        background-color: $grey-lighter;
+    }
+}
+
+.dm-new,
+.dm-profile-container {
+    .nav.dm-nav {
+        position: relative;
+        .icon-search {
+            position: absolute;
+            font-size: 20px;
+            //left: 7px;
+        }
+        input.form-control {
+            flex: 8;
+            padding-left: 30px;
+        }
+    }
+}
+
+ul.nav.nav-tabs.flex-tabs {
+    display: flex;
+    min-height: 53px;
+    li.nav-item {
+        flex: 1;
+    }
+}

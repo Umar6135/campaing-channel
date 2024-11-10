@@ -1,0 +1,101 @@
+.dm-accordion {
+
+    .card {
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .card-header {
+        border: none;
+        background-color: rgba(0,0,0,0);
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.025);
+
+            a > i {
+                color: #bdbfbf;
+            }
+        }
+
+        i {
+            color: $color-archived;
+            font-size: 1.75rem;
+            line-height: .85;
+            margin-right: 21px;
+            &::before {
+                vertical-align: middle;
+            }
+            &.status.enabled {
+                color: $color-active;
+            }
+            &.status.error {
+                color: $color-error;
+            }
+        }
+
+        a {
+            display: flex;
+            &:hover {
+                text-decoration: none;
+            }
+
+            i {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .accordion-loading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card-body {
+        padding: 10px 75px 35px 75px;
+
+        .collapse-link, .top-link {
+            color: #4F6571;
+            font-size: 15px;
+            line-height: 19px;
+            &:hover {
+                text-decoration: none;
+            }
+            i {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .btn-toggle {
+        margin: 0;
+        &::before, &::after {
+            content: ''
+        }
+    }
+
+    // only used when channels are disabled
+    .card-text {
+        margin-bottom: 10px;
+    }
+
+    // used for a channel that is not available yet
+    .accordion-coming-soon {
+        padding: 20px 0 80px 0;
+        text-align: center;
+
+        i {
+            font-size: 2.75rem;
+        }
+
+        .coming-soon-msg {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .image-preview {
+        max-width: 340px;
+    }
+}
+

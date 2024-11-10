@@ -1,0 +1,103 @@
+/*------------------------------------*
+	@COMPONENTS #LINK
+\*------------------------------------*/
+
+.link {
+    color: $blue-dark;
+    @include trans;
+
+    & .dl-list--alt {
+        color: red !important;
+    }
+
+    &:hover {
+        text-decoration: underline !important;
+        color: $blue-dark !important;
+    }
+}
+
+.domain-actions-link {
+    #{$states} {
+        text-decoration: none;
+    }
+}
+
+input.link--alt {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: 0;
+    #{$states} {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        outline: 0;
+    }
+}
+.link--alt {
+    color: $red-dark;
+    display: block;
+    #{$states} {
+        text-decoration: underline !important;
+        color: $red-dark !important;
+        cursor: pointer;
+    }
+    &.disabled {
+        color: inherit;
+        opacity: 0.3;
+
+        #{$states} {
+            color: inherit;
+            opacity: 0.3;
+            text-decoration: underline;
+            cursor: auto;
+        }
+    }
+    &:hover {
+        text-decoration: underline !important;
+        color: $red-dark !important;
+    }
+}
+
+.link--dark:hover {
+    color: rgba(29, 33, 35, 0.5) !important;
+    text-decoration: none !important;
+}
+
+.link--blue {
+    color: #0057B7 !important;
+}
+
+.link--blue:hover {
+    color: #003f84 !important;
+}
+
+.link--grey {
+    font-size: 14px;
+    line-height: 20px;
+    color: #5D6975;
+}
+
+.link--grey:hover {
+    color: #465059;
+}
+
+.link--xs {
+    font-size: 13px;
+}
+
+.link--sm {
+    font-size: 14px;
+}
+
+.link--md {
+    font-size: 15px;
+}
+
+.link--underline {
+    text-decoration: underline !important;
+}
+
+.link--underline:hover {
+    opacity: 0.5;
+}

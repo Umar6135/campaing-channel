@@ -1,0 +1,65 @@
+/*------------------------------------*
+	@COMPONENTS #ACTIVITY
+\*------------------------------------*/
+
+.activity {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.activity__wrap {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        background-color: $white;
+        box-shadow: 0 0 0 3px $white;
+        position: absolute;
+        top: 20px;
+        left: -26px;
+        z-index: 999;
+    }
+
+    &.active {
+        &::before {
+            background-color: $blue;
+        }
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $grey-lighter;
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 100%;
+            background-color: $grey-lighter;
+            position: absolute;
+            top: 22px;
+            left: -22px;
+        }
+    }
+
+    span {
+        color: $blue-dark;
+        font-size: 13px;
+    }
+}
+
+.activity__title {
+    color: $black-light;
+    font-family: $bold;
+    font-size: 15px;
+}
+
+.activity__text {
+    color: $black-light;
+    font-size: 15px;
+}

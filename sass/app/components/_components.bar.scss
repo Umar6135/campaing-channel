@@ -1,0 +1,132 @@
+/*------------------------------------*
+	@COMPONENTS #BAR
+\*------------------------------------*/
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bar__line {
+    opacity: 0;
+    content: '';
+    width: 120px;
+    height: 5px;
+    background-color: $grey-lighter;
+    position: relative;
+
+    i {
+        content: '';
+        background-color: $grey-light;
+        height: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.bar__text {
+    color: $black-light;
+    margin-right: 10px;
+}
+
+.bar--xs {
+    .bar__line {
+        width: 52px;
+        background-color: $grey-lighter;
+
+        i {
+            content: '';
+            background-color: $grey-light;
+            height: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.bar--green {
+    .bar__line {
+        i {
+            background-color: $green;
+        }
+    }
+}
+
+.bar--blue {
+    .bar__line {
+        i {
+            background-color: $blue-light;
+        }
+    }
+}
+
+.bar--orange {
+    .bar__line {
+        i {
+            background-color: $orange;
+        }
+    }
+}
+
+.campaigns-row {
+    .bar img {
+        position: absolute;
+    }
+    .bar__text {
+        opacity: 0;
+    }
+
+    // TODO: anything that is not a "bar" should not be inside _components.bar.scss
+    display: flex;
+    align-items: center;
+
+    .campaigns-info-row {
+        width: 61%;
+    }
+    .campaigns-stats-row {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 13%;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+
+        .campaigns-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+        }
+
+        .campaigns-line {
+            box-sizing: border-box;
+            height: 49px;
+            width: 1px;
+            background-color: #dbe0e1;
+            position: absolute;
+            left: 0;
+        }
+        .campaigns-amount {
+            color: #324047;
+            font-size: 26px;
+            text-align: center;
+            margin: -5px 0;
+        }
+        .campaigns-unit {
+            color: #55626a;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+/*------------------------------------*
+	@COMPONENTS #FINANCIAL
+\*------------------------------------*/
+
+.financial {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.financial__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border;
+}
+
+.financial__table {
+    thead {
+        th {
+            border: none !important;
+            background-color: transparent;
+            position: relative;
+            font-family: $bold;
+            color: $navy;
+            vertical-align: middle;
+            text-align: center;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            .icon {
+                color: $grey;
+                width: 63px;
+                height: 27px;
+            }
+
+            span {
+                font-size: 15px;
+                font-family: $base-font;
+                @include centerH;
+                top: 12px;
+            }
+        }
+    }
+
+    tbody {
+        border-bottom: 1px solid $grey-lighter;
+
+        td {
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+
+            &:first-child {
+                text-align: left;
+            }
+        }
+
+        tr {
+            border-left: 1px solid $grey-lighter;
+            border-right: 1px solid $grey-lighter;
+
+            &:not(.active):hover {
+                background-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+}

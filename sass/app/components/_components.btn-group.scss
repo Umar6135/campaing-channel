@@ -1,0 +1,73 @@
+/*------------------------------------*
+	@COMPONENTS #BTN-GROUP
+\*------------------------------------*/
+
+.dm-btn-group {
+    &.btn-group {
+        margin-bottom: 30px !important;
+        display: flex !important;
+
+        .btn {
+            padding: 6px 30px;
+            background-color: $white-dark !important;
+            border: 1px solid $grey-light !important;
+            font-size: 15px;
+            color: #1d2123 !important;
+            position: static !important;
+            z-index: 0 !important;
+
+            &.active {
+                background-color: $navy !important;
+                color: $white !important;
+            }
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.dm-btn-tabs {
+    width: 250px;
+    .btn {
+        color: #00aee0;
+        border: none;
+        background-color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        #{$states} {
+            border: none !important;
+            color: #00aee0 !important;
+            background-color: #fff !important;
+            box-shadow: none !important;
+        }
+    }
+    .template-btn-inactive {
+        color: #aab3b8;
+    }
+}
+
+.btn-content--xs {
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+
+    .btn {
+        padding: 6px 15px;
+        background-color: $white !important;
+
+        .icon {
+            width: 16px;
+            height: 14px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.dm-email-label{
+    color: #00aee0;
+}

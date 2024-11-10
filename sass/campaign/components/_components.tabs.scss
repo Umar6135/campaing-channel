@@ -1,0 +1,82 @@
+/*------------------------------------*
+	@COMPONENTS #TABS
+\*------------------------------------*/
+.button-style-nav {
+  .nav-item {
+    text-align: center;
+    height: 40px;
+    width: 48px;
+  }
+
+  .nav-link {
+    &.active {
+      background-color: #324047;
+    }
+  }
+
+  .nav-item-add {
+    background-color: #0667DA;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .nav-add-tab {
+    font-size: 1.3em;
+    color: white;
+    height: inherit;
+    width: inherit;
+  }
+
+  .nav-add-tab i {
+    color: white;
+  }
+}
+
+.button-style-nav-wide {
+  .nav-item {
+    text-align: center;
+    height: 42px;
+    width: 62px;
+  }
+
+  .nav-link {
+    &.active {
+      background-color: #324047;
+    }
+  }
+
+  .nav-item-add {
+    background-color: #0667DA;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .nav-add-tab {
+    font-size: 1.3em;
+    color: white;
+    height: inherit;
+    width: inherit;
+  }
+
+  .nav-add-tab i {
+    color: white;
+  }
+
+  .top-nav-icon-wrapper {
+    position: absolute;
+    top: -7px;
+    display: inherit;
+    right: -3px;
+    background: #fff;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .delete-email-icon {
+    color: #dc3545
+  }
+}
+

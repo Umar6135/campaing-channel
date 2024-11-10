@@ -1,0 +1,69 @@
+// this file should only be used for css overrides
+
+// boostrap overrides
+.progress {
+    height: 0.35rem;
+}
+
+.nav-tabs .nav-item {
+    margin-right: 3px;
+}
+
+// bootstrap additions
+.text-wrap-any {
+    overflow-wrap: anywhere;
+}
+.icon-spin {
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+table.table-fixed-2 thead tr th {
+    background-color: inherit;
+    position: sticky;
+    top: -1px;
+}
+// TODO: remove duplicate .table-fixed styles (worse solution), rename/replace with this one
+// resources/sass/campaign/layout.css
+// 74:/* fixed header table sneakyness */
+// resources/sass/campaign/stats.scss
+// 8:/* fixed header table sneakyness */
+
+// fontastic.css font-family declaration which corrects the path and adds cache-bust
+@include font-face('dm-admin', '../fonts/dm-admin', null, null, eot svg ttf woff);
+
+// selectize
+.selectize-dropdown {
+    // display: block !important; // DEBUG
+    [data-selectable] {
+        padding: 3px 12px;
+    }
+}
+.selectize-control .selectize-dropdown-content {
+    .name {
+        margin: 0 -3px 0 0;
+    }
+    .subtitle {
+        color: #aaa;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        margin: 0;
+    }
+    .name .highlight,
+    .subtitle .highlight {
+        font-style: normal;
+        background-color: #d3e6fb;
+    }
+}
+
+// flatpickr
+.flatpickr-input.form-control[readonly] {
+    background-color: #fff;
+}

@@ -1,0 +1,38 @@
+/*------------------------------------*
+	@COMPONENTS #COLLAPSE
+\*------------------------------------*/
+
+.collapse-trigger {
+    padding: 0;
+    border-radius: 0;
+    color: $grey-dark;
+    font-size: 14px;
+    text-decoration: none !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        color: darken($grey, 10);
+    }
+}
+
+.icon-angle-up {
+    color: $grey-dark;
+    width: 12px;
+    height: 8px;
+    transform: rotate(180deg);
+}
+
+.collapsed {
+    .icon-angle-up {
+        transform: rotate(0deg);
+    }
+    .icon-chevron-up {
+        transform: rotate(180deg);
+    }
+}

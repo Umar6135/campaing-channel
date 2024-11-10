@@ -1,0 +1,27 @@
+/*------------------------------------*
+	@COMPONENTS #RECIPIENTEXPORT
+\*------------------------------------*/
+
+.recipient-pixel-log-container {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.recipient-export-modal-container {
+  max-width: 96% !important;
+  height: 96% !important;
+  max-height: 96% !important;
+}
+
+.recipient-export-modal-content {
+  height: 96% !important;
+  max-height: 96% !important;
+}
+
+.download-link-btn {
+  color: #78787a !important;
+}
+
+.download-link-btn:hover, .download-link-btn:focus, .download-link-btn:active {
+  color: #2b2a2a !important;
+}

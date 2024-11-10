@@ -1,0 +1,171 @@
+/*------------------------------------*
+	@COMPONENTS #WRAP
+\*------------------------------------*/
+
+.wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    @include flexC;
+
+    small {
+        color: $navy-lighter;
+    }
+}
+
+.wrap--alt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.wrap--start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.wrap small {
+    color: #7d8f99;
+}
+
+.wrap > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.wrap-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.wrap--col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.wrap--col-alt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.wrap--alt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+//.wrap--start {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-align: center;
+//    -ms-flex-align: center;
+//    align-items: center;
+//    -webkit-box-pack: start;
+//    -ms-flex-pack: start;
+//    justify-content: flex-start;
+//}
+
+.wrap--start > * {
+    margin-right: 8px !important;
+}
+
+.wrap--end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.wrap--end > *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.wrap--space {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.wrap--border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #C0C4C9;
+    border-radius: 4px;
+    padding: 4px 5px;
+    margin-bottom: 10px;
+}
+
+.wrap-button {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-right: 10px;
+}
+
+.wrap-button > *:not(:first-child) {
+    margin-left: 8px;
+}
+
+.wrap-button:last-child {
+    margin-right: 0;
+}
+
+.sidefilter-on .wrap-button {
+    display: none !important;
+}
+
+td .wrap-button {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}

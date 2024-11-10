@@ -1,0 +1,166 @@
+/*------------------------------------*
+    @OBJECTS #DATE_TIME_PICKER
+\*------------------------------------*/
+
+// variables
+$date-time-picker-font-size: 1rem;
+$date-time-picker-color: #324047;
+$date-time-picker-border: #c6cccd;
+
+.date-picker {
+  border-radius: 3px;
+  border: 1px solid $date-time-picker-border;
+
+  .flatpickr-calendar {
+    box-shadow: none;
+    line-height: 14px;
+
+    &.inline {
+      border-right: 1px solid $date-time-picker-border;
+      top: 0;
+    }
+
+    .flatpickr-month {
+      height: 2.375rem;
+      background-color: #f9fafb;
+      color: $date-time-picker-color;
+      fill: $date-time-picker-color;
+      border-bottom: 1px solid $date-time-picker-border;
+      border-radius: 3px 0 0 0;
+    }
+
+    .flatpickr-current-month {
+      font-size: initial;
+
+      span.cur-month,
+      input.cur-year {
+        font-size: $date-time-picker-font-size;
+        color: $date-time-picker-color;
+      }
+    }
+
+    .flatpickr-monthDropdown-months {
+      background-color: #f9fafb;
+    }
+
+    .flatpickr-prev-month:hover svg,
+    .flatpickr-next-month:hover svg {
+      fill: $date-time-picker-color;
+    }
+
+    .flatpickr-weekdays {
+      background: #fff;
+
+      span.flatpickr-weekday {
+        color: #00aee0;
+        background: #fff;
+      }
+    }
+
+    .flatpickr-days {
+      border: none;
+
+      .flatpickr-day {
+        &:focus {
+          background: #fff;
+          border-color: #fff;
+        }
+
+        &.selected {
+          background: rgba(0, 174, 224, 0.2);
+          color: $date-time-picker-color;
+          border: none;
+        }
+
+        &.hidden {
+          display: inline-block !important;
+        }
+      }
+    }
+
+    .flatpickr-innerContainer {
+      border-bottom: none;
+    }
+  }
+}
+
+.time-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .time-picker-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .time-picker__control {
+      min-width: 5.625rem;
+
+      .time-picker__control-icon {
+        color: #4f6571;
+        cursor: pointer;
+      }
+
+      .time-picker__control-input {
+        input {
+          width: 5.75rem;
+          height: 4.75rem;
+          margin-bottom: 0;
+          text-align: center;
+          font-size: 2.75rem;
+          border: 1px solid $date-time-picker-border;
+          border-radius: 3px;
+
+          &::-webkit-inner-spin-button,
+          &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .time-picker__separator {
+      margin: 0 0.35rem;
+    }
+  }
+
+  .time-picker__ampm {
+    margin-top: 0.75rem;
+
+    a {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      line-height: 2.75rem;
+      color: $date-time-picker-color;
+      text-align: center;
+      font-size: 15px;
+      border: 1px solid $date-time-picker-border;
+      border-radius: 5.5rem;
+
+      &:first-child {
+        margin-right: 0.45rem;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $date-time-picker-color;
+      }
+
+      &.active {
+        color: #fff;
+        background: #324047;
+        border-color: #324047;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// emoji picker overrides
+.emoji-wysiwyg-editor {
+
+    &.channel-sms-emoji {
+        min-height: 150px;
+        height: auto;
+    }
+    padding: 6px 12px;
+    padding-right: 35px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    &.lead-message-emoji {
+        height: 34px;
+        border-radius:0;
+    }
+}
+
+i.emoji-picker-icon {
+    &.sms-emoji-picker {
+        top:30px;
+    }
+    &.lead-emoji-picker {
+        top:3px;
+    }
+    &.lead-profile-emoji-picker {
+        top:13px;
+        right:88px;
+        color:rgb(73, 80, 87);
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}
+
+div.emoji-menu {
+    top: 60px;
+}
+
+.dm-new {
+    .emoji-wysiwyg-editor:empty:focus:before {
+        content: attr(placeholder);
+        color: #9aa2ab;
+    }
+}

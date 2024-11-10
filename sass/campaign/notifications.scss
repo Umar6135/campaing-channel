@@ -1,0 +1,44 @@
+.sf-accordion {
+    .sf-custom-field-name {
+        width: 205px;
+    }
+    .sf-custom-select-container {
+        width:100%;
+    }
+    .sf-custom-group {
+        &:first-child {
+            margin-right:10px;
+        }
+    }
+    .sf-custom-group {
+        &:not(:first-child) {
+            margin-left:10px;
+        }
+    }
+
+    .sf-custom-right {
+        margin-left:20px;
+    }
+
+    .delete-field {
+        position: relative;
+        top: 3px;
+        right: 6px;
+        color: #f0a0a3;
+        background-color: inherit;
+        font-size: 1.65em;
+        cursor: pointer;
+        margin-left:18px;
+    }
+
+    .icon-help-circled {
+        position: relative;
+        top: 2px;
+    }
+
+    .add-wrap, .delete-wrap {
+        i {
+            font-size:25px;
+        }
+    }
+}

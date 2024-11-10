@@ -1,0 +1,57 @@
+/*------------------------------------*
+	@COMPONENTS #FILTERSDROPDOWN
+\*------------------------------------*/
+
+
+.select-filter-dropdown-menu-container{
+  margin: 8px 0 8px -8px !important;
+  position: absolute;
+}
+.input-range-select-container{
+  padding: 5px 10px 10px 10px;
+  margin: 0 8px 5px 5px;
+}
+
+.input-range__slider {
+  background: #0088c8 !important;
+  border: none;
+}
+
+.input-range__track--active {
+  background: #0088c8 !important;
+}
+
+.indicator-separator {
+  -webkit-align-self: stretch;
+  align-self: stretch;
+  background-color: hsl(0,0%,80%);
+  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-left: 8px;
+  width: 1px;
+  box-sizing: border-box;
+}
+
+.select-filter-label{
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.select-filter-label-svg-container{
+  color: hsl(0,0%,80%);
+  padding: 8px 2px 8px 8px;
+  -webkit-transition: color 150ms;
+  transition: color 150ms;
+  box-sizing: border-box;
+}
+
+.select-filter-label-svg {
+  display: inline-block;
+  fill: currentColor;
+  line-height: 1;
+  stroke: currentColor;
+  stroke-width: 0;
+}
+
+

@@ -1,0 +1,70 @@
+/*------------------------------------*
+	@TRUMPS #LAYOUT
+\*------------------------------------*/
+
+@for $i from 1 through 10 {
+    .spaced#{$i}x {
+        margin-bottom: 10px * $i !important;
+    }
+}
+
+.dm-padless-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.dm-padless-height {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.dm-padless,
+.dm-padless-all {
+    padding: 0 !important;
+}
+
+$padding: ('left', 'right', 'top', 'bottom');
+
+@each $dir in $padding {
+    .dm-padless-#{$dir} {
+        padding-#{$dir}: 0 !important;
+    }
+    @for $j from 1 through 5 {
+        .dm-p-#{$dir}-#{$j} {
+            padding-#{$dir}: #{$j * 10}px;
+        }
+        .dm-nudge-#{$dir}-#{$j} {
+            @include dmNudge($dir, $j, 'px');
+        }
+        .dm-shift-#{$dir}-#{$j} {
+            @include dmNudge($dir, $j, 'em');
+        }
+        .dm-#{$dir}-#{$j} {
+            position: absolute;
+            #{$dir}: #{$j * 2}em;
+        }
+    }
+    .dm-#{$dir}-0 {
+        position: absolute;
+        #{$dir}: 0;
+    }
+}
+
+.dm-container-tall {
+    background-color: #fff;
+    min-height: 200px;
+    padding-top: 50px;
+}
+
+.dm-cursor-auto {
+    #{$states} {
+        cursor: auto !important;
+    }
+}
+
+.dm-mask-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,28 @@
+/*------------------------------------*
+    @OBJECTS #FORMS
+\*------------------------------------*/
+
+.form-control {
+    vertical-align: middle;
+    @include trans;
+}
+
+textarea.form-control {
+    padding: 10px 15px;
+    resize: none;
+    min-height: 150px;
+    line-height: $base-line-height;
+}
+
+// SPINNERS
+// For Firefox
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+// Webkit browsers like Safari and Chrome
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

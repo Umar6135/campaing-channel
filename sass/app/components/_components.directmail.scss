@@ -1,0 +1,346 @@
+/*------------------------------------*
+	@COMPONENTS #AUDIENCE
+\*------------------------------------*/
+
+.audience-holder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+
+  .accordion {
+    .card-body {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  h2,
+  .h2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0 0 14px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .content-area h3,
+  .h3 {
+    margin: 0 0 15px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0 0 25px;
+  }
+
+  label {
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+  }
+
+  .select2 {
+    width: 100% !important;
+
+    .select2-selection--single {
+      height: 40px !important;
+      border: 1px solid #b7bfc9 !important;
+    }
+    .select2-selection__rendered {
+      line-height: 40px !important;
+    }
+
+    .select2-selection__arrow {
+      top: 19px !important;
+      right: 10px;
+
+      b {
+        border-color: #1c1b1f transparent transparent transparent;
+        border-width: 5px 5px 0 5px;
+      }
+    }
+  }
+
+  .text-order-id {
+    color: #6c7073;
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: -7px;
+  }
+
+  .card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 0 25px;
+
+    .audience-card {
+      min-width: 48%;
+      flex: 1;
+      cursor: pointer;
+    }
+  }
+
+  .icon-holder {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px 0 0;
+  }
+
+  .artwork-section {
+    margin: 0 0 2rem;
+  }
+
+  .artwork {
+    margin: 0 0 1rem;
+
+    .artwork-area {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .artwork-frame {
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23EC3636FF' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+      width: 511px;
+      height: 416px;
+      margin: 0 0 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+      color: #777b7e;
+
+      a {
+        color: #1868fd;
+
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+
+      & > .text-danger {
+        color: #ec3636 !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 1rem;
+        align-items: center;
+        font-weight: 700;
+        font-size: 16px;
+
+        .icon-holder {
+          padding: 0;
+          margin: 0 0 10px;
+        }
+      }
+
+      & > * {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .artwork-actions {
+    gap: 8px;
+    display: flex;
+  }
+
+  .btn {
+    border-radius: 8px;
+    //padding: 10px 16px;
+    font-weight: 700;
+    transition: color, background, 0.25s linear 0s;
+
+    &.btn-primary {
+      background: #1868fd;
+      color: #fff;
+
+      &:hover {
+        background: darken(#1868fd, 30) !important;
+      }
+    }
+    &.btn-danger {
+      background: rgba(236, 78, 87, 0.2);
+      color: #ec3636;
+
+      &:hover {
+        background: rgba(236, 78, 87, 1) !important;
+      }
+    }
+  }
+
+  .radio-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+
+    .radio {
+      margin: 0 !important;
+      font-weight: normal;
+    }
+  }
+
+  .radio--alt input:checked + span::after {
+    top: 3px;
+  }
+
+  .text-paid-warning {
+    color: #fba500;
+    font-size: 12px;
+    line-height: 15px;
+
+    .icon-holder {
+      margin-right: 5px;
+    }
+  }
+
+  .custom-datepicker {
+    .datepicker {
+      width: 328px;
+      border: 1px solid #e7e9eb;
+      padding: 16px;
+
+      .datepicker-switch {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      .dow {
+        font-size: 12px;
+
+        &:first-child,
+        &:last-child {
+          color: #929598;
+        }
+      }
+
+      .day {
+        padding: 11px 6px;
+        border-radius: 100%;
+        margin: 1px;
+
+        &.new {
+          color: #929598;
+        }
+
+        &.today {
+          background: none;
+          border-radius: 100%;
+          box-shadow: 0 0 0 1px #000;
+        }
+      }
+
+      .prev,
+      .next {
+        font-size: 0;
+        line-height: 0;
+        display: inline-block;
+        background: transparent;
+        text-indent: -9999px;
+        border-top: 2px solid #1c1b1f;
+        border-left: 2px solid #1c1b1f;
+        transition: all 250ms ease-in-out;
+        text-decoration: none;
+        color: transparent;
+        transform: rotate(-45deg);
+        width: 10px;
+        height: 12px;
+      }
+
+      .next {
+        transform: rotate(135deg);
+      }
+    }
+  }
+}
+
+.audience-card {
+  border-radius: 8px;
+  background: #f5f7f8;
+  padding: 24px;
+  margin: 0 0 1rem;
+  transition: opacity, background, 0.25s linear 0s;
+
+  &.disabled {
+    cursor: not-allowed !important;
+    // box-shadow: 0 0 0 1px #c7c7c7;
+    transition: none;
+    background: #ddd !important;
+
+    &:hover {
+      opacity: 1 !important;
+      background: #ddd !important;
+    }
+  }
+
+  &.big-padding {
+    padding: 15px 17px;
+    background: #e8f0ff;
+  }
+
+  h3 {
+    margin: 0 0 8px !important;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    background: #e1e1e1;
+  }
+
+  &.active {
+    background: #323435;
+    color: #fff;
+
+    &:hover {
+      background: #323435;
+    }
+
+    .icon-holder {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &.dark {
+    background: #e8f0ff;
+  }
+
+  .feature-list {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1;
+
+    li + li {
+      margin-top: 10px;
+    }
+  }
+}

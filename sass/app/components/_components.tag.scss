@@ -1,0 +1,139 @@
+/*------------------------------------*
+	@COMPONENTS #TAG
+\*------------------------------------*/
+
+.tag-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.tag-wrap__text {
+    color: $navy;
+    margin-bottom: 0;
+    margin-right: 12px;
+
+    span {
+        background-color: $white;
+        width: 63px;
+        border: 1px solid $grey-lighter;
+        border-radius: 3px;
+    }
+}
+
+.tag {
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+    border: 1px solid $blue-light;
+    color: $black-light;
+    background-color: #edfbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+
+    .icon-x {
+        width: 9px;
+        height: 9px;
+        margin-left: 10px;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &.x--alt {
+            width: 5px;
+            height: 20px;
+            font-size: 10px;
+        }
+    }
+
+    &:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    &:hover {
+        border-color: darken($blue-light, 10) !important;
+    }
+}
+
+.tag--alt {
+    .icon-x {
+        margin-left: 5px;
+    }
+}
+
+.tag--grey {
+    border: 1px solid #bababa;
+    color: $navy;
+    background-color: $white !important;
+
+    .icon-x {
+        color: $navy;
+        width: 10px;
+        height: 10px;
+        margin-left: 5px;
+    }
+
+    &:hover {
+        border-color: darken(#bababa, 10) !important;
+    }
+}
+
+.template-tags-container,
+.tags-container {
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    max-height: 120px;
+}
+
+.template-add-tag,
+.dm-add-tag {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.template-remove-tag {
+    .icon {
+        font-size: 10px;
+        position: relative;
+        top: -2px;
+        pointer-events: none;
+    }
+    pointer-events: auto;
+}
+
+#template-tag-button,
+.tag-button {
+    position: relative;
+    top: 2px;
+
+    &.btn--outline {
+        &:hover {
+            background-color: #0086ad !important;
+        }
+    }
+}
+
+.dm-new {
+    .tag-button {
+        &.btn--outline {
+            background-color: $white !important;
+            font-family: $base-font;
+            font-size: 15px;
+            border: 1px solid #00aee0;
+            color: #0088c8 !important;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 14px;
+            height: 32px;
+        }
+    }
+}

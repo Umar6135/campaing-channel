@@ -1,0 +1,16 @@
+.dm-light {
+    font-family: $font-family-light-dm;
+    font-weight: $font-weight-light;
+}
+.dm-med {
+    font-family: $font-family-med-dm;
+    font-weight: $font-weight-normal;
+}
+.dm-bold {
+    font-family: $font-family-bold-dm;
+    font-weight: $font-weight-bold;
+    &.dm-btn {
+        font-family: $font-family-bold-dm !important;
+        font-weight: $font-weight-bold !important;
+    }
+}

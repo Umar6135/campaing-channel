@@ -1,0 +1,59 @@
+/*------------------------------------*
+	@COMPONENTS #ONLINE
+\*------------------------------------*/
+
+.online {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: $blue;
+        @include centerV;
+        left: -15px;
+    }
+
+    tbody & {
+        &::before {
+            left: 10px;
+        }
+    }
+}
+
+.online--green {
+    &::before {
+        background-color: $green;
+    }
+}
+
+.online--navy {
+    &::before {
+        background-color: $navy;
+    }
+}
+
+.online--red {
+    &::before {
+        background-color: $red;
+    }
+}
+
+.online--blue-light {
+    &::before {
+        background-color: $blue-light;
+    }
+}
+
+.online--blue-dark {
+    &::before {
+        background-color: $blue-dark;
+    }
+}
+
+.online--orange {
+    &::before {
+        background-color: $orange;
+    }
+}

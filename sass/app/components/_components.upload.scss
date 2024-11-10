@@ -1,0 +1,39 @@
+/*------------------------------------*
+	@COMPONENTS #BUTTONS
+\*------------------------------------*/
+
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .btn {
+        color: $blue-dark !important;
+        font-size: 15px;
+    }
+
+    .custom-file {
+        width: 120px !important;
+
+        &,
+        & > * {
+            height: 15px !important;
+            line-height: 1;
+        }
+
+        &:hover {
+            cursor: pointer !important;
+        }
+    }
+
+    .custom-file-label {
+        border: none;
+        color: $blue-dark;
+        padding: 0;
+        margin-bottom: 0;
+
+        &::after {
+            display: none !important;
+        }
+    }
+}

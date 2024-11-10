@@ -1,0 +1,344 @@
+/*------------------------------------*
+	@COMPONENTS #ICONS
+\*------------------------------------*/
+
+.icon {
+    fill: currentColor;
+    font-size: 20px;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    @include trans;
+
+    &.icon--standard {
+        width: 14px !important;
+        height: 24px !important;
+    }
+    .dm-group & {
+        font-size: 17px;
+    }
+}
+
+.icon-lg {
+    font-size: 23px;
+}
+.icon-md {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+}
+.icon-comments {
+    width: 18px;
+    height: 18px;
+}
+
+.icon-dots {
+    width: 20px;
+    height: 6px;
+}
+
+.icon-angle-down {
+    width: 12px;
+    height: 8px;
+}
+
+.icon-plus {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-calendar {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-date {
+    width: 14px;
+    height: 14px;
+}
+
+.profile {
+    .icon-profile {
+        width: 16px;
+        height: 17px;
+    }
+
+    .icon-phone {
+        width: 16px;
+        height: 15px;
+    }
+
+    .icon-email {
+        width: 16px;
+        height: 13px;
+    }
+
+    .icon-pin {
+        width: 14px;
+        height: 19px;
+    }
+
+    .icon-vehicle {
+        width: 22px;
+        height: 13px;
+    }
+}
+
+.icon-image {
+    color: $black;
+}
+
+.campaign__actions {
+    .icon-ch-direct-mail {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-ch-landing-page {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-paper {
+        width: 15px;
+        height: 17px;
+    }
+
+    .icon-calendar {
+        width: 19px;
+        height: 16px;
+    }
+
+    .icon-envelope {
+        width: 19px;
+        height: 13px;
+    }
+
+    .icon-chat {
+        width: 19px;
+        height: 20px;
+    }
+
+    .icon-pointer {
+        width: 22px;
+        height: 22px;
+    }
+
+    .icon-dots {
+        width: 18px;
+        height: 6px;
+    }
+
+    .icon-ch-phone {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-ch-email {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-ch-sms {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-digital {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon-ellipsis {
+        font-size: 27px;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.icon-heart-outline {
+    color: $grey-light;
+}
+
+.icon-counter {
+    color: $blue;
+}
+
+.icon-counter--white {
+    color: $white;
+    width: 15px;
+    height: 15px;
+}
+
+.icon-layout-grid {
+    color: $grey;
+}
+
+.anchor-icon {
+    text-decoration: none;
+    color: #a1a4a9;
+    &:hover {
+        color: #333;
+    }
+
+    &.disabled {
+        color: #e1e2e4;
+        &:hover {
+            color: #e1e2e4;
+        }
+    }
+}
+
+.campaign__cover {
+    .campaign-thumb {
+        max-width: 115px;
+    }
+}
+
+.icon-back-button {
+    position: relative;
+    top: 3px;
+}
+
+.dm-new,
+.dm-profile-container {
+    .icon-check-circle-filled {
+        opacity: 0.2;
+        &.enabled {
+            opacity: 1;
+            color: #50d376;
+        }
+    }
+
+    .icon-info-circle-outline {
+        &.enabled {
+            color: #00aee0;
+        }
+    }
+
+    .icon-check-circle-outline {
+        opacity: 0.2;
+        &.enabled {
+            opacity: 1;
+            color: #50d376;
+        }
+    }
+    .icon-ch-email {
+        color: rgb(50, 64, 71);
+    }
+}
+
+[class*='icon-check-'] {
+    &.icon-check-mini {
+        font-size: 16px;
+        height: 16px;
+        width: 16px;
+        //position: relative;
+        //top: 1px;
+    }
+}
+
+.dm-new,
+.dm-profile-container {
+    .dm-tip {
+        position: relative;
+        top: 2px;
+    }
+    .notifications-email-header,
+    .notifications-sms-header {
+        position: relative;
+        left: -8px;
+    }
+
+    .dm-btn-toggle {
+        position: relative;
+        &.icon-shift-up {
+            top: -5px;
+        }
+        &.icon-shift-down {
+            top: 5px;
+        }
+        .icon {
+            font-style: normal;
+            background-color: $white;
+            border-radius: 100%;
+            position: absolute;
+            @include center;
+            @include trans;
+            &:after {
+                font-family: 'dm-admin';
+            }
+            &.icon-forbidden {
+                opacity: 1;
+                color: $red;
+                &:after {
+                    content: 'm';
+                }
+                &:hover {
+                    opacity: 0;
+                }
+            }
+            &.icon-forbidden-red {
+                opacity: 0;
+                color: $red;
+                &:after {
+                    content: 'l';
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &.icon-allowed {
+                opacity: 1;
+                color: $bgr;
+                &:after {
+                    content: 'n';
+                }
+                &:hover {
+                    opacity: 0;
+                }
+            }
+            &.icon-allowed-green {
+                opacity: 0;
+                color: $bgr;
+                &:after {
+                    content: 'e';
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.dm-icon-warning {
+    color: $red;
+    &:hover {
+        color: darken($red, 10);
+    }
+}
+
+.delete-wrap {
+    color: #f0a0a3;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: 1.4em;
+
+    .icon-minus-circle-filled {
+        display: none;
+    }
+
+    &:hover {
+        .icon-minus-circle-filled {
+            display: block;
+        }
+
+        .icon-minus-circle-outline-thin {
+            display: none;
+        }
+    }
+}

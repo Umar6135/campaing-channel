@@ -1,0 +1,95 @@
+/*------------------------------------*
+	@COMPONENTS #BOX
+\*------------------------------------*/
+.box-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    border: 1px solid $grey-lighter;
+    background-color: $white;
+    padding: 30px 40px 30px 50px;
+    margin-bottom: 10px;
+    > * {
+        margin-bottom: 0;
+    }
+}
+
+.box--col {
+    padding: 16px 20px;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start !important;
+    margin-bottom: 0;
+
+    > * {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.box--grey {
+    background: #F5F6F7;
+    border: 1px solid #C0C4C9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.box__img {
+    margin-right: 60px;
+}
+
+.box__text {
+    color: $black-light;
+    span {
+        color: $navy-light;
+    }
+}
+
+.box__btn {
+    margin-left: auto;
+    background-color: $grey !important;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid $grey;
+    max-width: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: auto;
+    padding-right: auto;
+    position: relative;
+    &:hover {
+        background-color: darken($grey, 10) !important;
+        border: 1px solid $grey !important;
+    }
+
+    &::after {
+        content: attr(data-hoverText);
+        @include center;
+        color: $red;
+        @include hide;
+    }
+
+    &.connected {
+        background-color: $green-light !important;
+        border: 1px solid $green-light !important;
+        transition: none;
+
+        &:hover {
+            border: 1px solid $red !important;
+            background-color: $white !important;
+            color: $white;
+
+            &::after {
+                @include show;
+            }
+        }
+    }
+}

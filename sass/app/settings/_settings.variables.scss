@@ -1,0 +1,77 @@
+//------------------------------------\\
+//  @SETTINGS #VARIABLES
+//------------------------------------//
+
+//COLORS
+$white: #fff;
+$white-dark: #f9fafb;
+$black: #111111;
+$black-dark: #000000;
+$black-light: #1D2123;
+$grey: #8e9aa1;
+$grey-dark: #656b6f;
+$grey-light: #aab3b8;
+$grey-lighter: #dbe0e1;
+$navy: #324047;
+$navy-dark: #242a31;
+$navy-light: #3f535e;
+$navy-lighter: #7D8F99;
+$blue: #00AEE0;
+$blue-dark: #0088C8;
+$blue-light: #8ad4ff; 
+$green: #69DF7B;
+$green-light: #43c368;
+$green-dark: #00B033;
+$tirkiz-dark: #40c6ab;
+$red: #E56C5B;
+$red-dark: #ca3f26;
+$purple: #897cc0;
+$pink: #af5a9e;
+$pink-light: #ee59b3;
+$orange: #ffa95b;
+$orange-dark: #F5A623;
+
+$primary: 					$blue;
+$alt: 						$black-light;
+
+// Backgrounds
+$bgr: 						#00B033;
+$base-bgr:                  #fff;
+
+
+$base-font:					'Proxima Nova Regular';
+$bold:						'Proxima Nova Bold';
+$light:						'Proxima Nova Light';
+
+$base-font-size:            16px;
+$base-line-height:         	19px;
+$base-font-weight:          400;
+
+$text-clr: 					$black-dark;
+$text-alt: 					$black-light;
+$placeholder-clr:			#ccc;
+$link-clr:					$black-light;
+$link-hover:				darken($primary,10);
+
+$border: $grey-lighter;
+$borderd: #aaa;
+$external-nav--background: #1a2227;
+$external-nav--overlay-background: #647A85;
+
+
+// Layout
+$space:                     30px;
+$radius:					3px;
+
+
+// Breakpoints
+$screen-xs:                 560px;
+$screen-sm:                 768px;
+$screen-md:                 992px;
+$screen-lg:                 1200px;
+
+$breakpoint:     			991px !default;
+
+// Select Text
+$selected-text-bgr:			#333;
+$selected-text-clr:			#fff;

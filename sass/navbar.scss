@@ -1,0 +1,211 @@
+#main-nav {
+    padding: 0;
+    background-color: #324047;
+    height: 60px;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#main-nav .navbar-nav {
+    flex-direction: row;
+    height: 100%;
+}
+
+#main-nav .navbar-nav .nav-item a {
+    font-weight: bold;
+    font-size: .85rem;
+    letter-spacing: .05rem;
+    line-height: 60px;
+    text-decoration: none;
+    color: #949a9e;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    &:hover {
+        color: #fff;
+    }
+}
+
+#main-nav .nav-item a.selected {
+    color: #fff;
+}
+
+#main-nav .selected::before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    background: #44b8da;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -webkit-transition: -webkit-transform 250ms ease;
+    transition: transform 250ms ease;
+    z-index: 500;
+    color: #f9f9fb;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    cursor: pointer;
+    list-style: none;
+    line-height: 17px;
+    margin-bottom: -2px;
+}
+
+#main-nav .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+    height: 60px
+}
+
+#main-nav .navbar-brand {
+    color: #fff;
+    background: #0667da;
+    font-size: 2.2em;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    &:focus {
+        color: #fff;
+        background: #44b8da;
+    }
+    &:hover {
+        color: #fff;
+        background: #44b8da;
+    }
+    .navbar-brand__logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+    }
+}
+#main-nav .navbar-brand {
+    .icon-logo-mark {
+        display: inline-block;
+        margin-top: 7px;
+    }
+    .icon-home {
+        display: inline-block;
+        margin-top: 7px;
+    }
+}
+
+#main-nav .support a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 60px;
+    display: inline-block;
+    height: 100%;
+}
+
+#main-nav .dropdown {
+    line-height: 56px;
+}
+
+#main-nav .dropdown > a {
+    display: inline-block;
+    height: 60px;
+}
+
+#main-nav .dropdown .navbar-name-letter {
+    line-height: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 50%;
+    height: 2.35em;
+    width: 2.35em;
+    border: 2px solid #E56C5B;
+    background: #E56C5B;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin-right: 3px;
+}
+
+#main-nav .dropdown .navbar-name-company {
+    color: #fff;
+    font-size: 15px;
+    line-height: 13.5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#main-nav .dropdown .navbar-name-company .name {
+    display: inline-block;
+    min-width: 60px;
+    max-width: 100px;
+}
+#main-nav .dropdown .navbar-name-company .company {
+    font-size: 13px;
+    max-width: 100px;
+    display: inline-block;
+}
+
+
+// hide bootstraps dropdown icon
+#main-nav .dropdown .dropdown-toggle::after {
+    display: none;
+}
+// show our own
+#main-nav .dropdown .icon-chevron-down {
+    color: #fff;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+#main-nav .dropdown .dropdown-menu {
+    z-index: 1050;
+    position: absolute;
+    margin-top: -0.4em;
+    border-radius: 4px;
+    width: 175px;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+    a {
+        height: 45px;
+        line-height: 2.9;
+        font-size: 15px;
+        padding: 0 0 0 12px;
+        color: #1d2123;
+        display: block;
+        margin: 0 4px;
+        border-radius: 4px;
+        width: 95%;
+
+        &:hover {
+            color: #1d2123;
+            background: #f8faf9;
+        }
+        &.logout {
+            color: #CA3F26;
+            &:hover {
+                color: #CA3F26;
+            }
+        }
+
+        i {
+            font-size: 30px;
+            line-height: 1;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    }
+}

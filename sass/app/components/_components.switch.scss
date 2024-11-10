@@ -1,0 +1,65 @@
+/*------------------------------------*
+	@COMPONENTS #SWITCH
+\*------------------------------------*/
+
+.switch-user {
+    label {
+        cursor: pointer;
+
+        &::before {
+            box-shadow: none !important;
+            background-image: linear-gradient(to top, #e5e8e8 0%, $grey-light 100%);
+            width: 45px !important;
+            height: 22px;
+            border-radius: 11px !important;
+            outline: none;
+            border: none;
+            top: 0px;
+        }
+
+        &::after {
+
+            content: ">";
+            font-family: "dm-admin";
+            font-size: 12px;
+            color: #adb5bd;
+            text-align: center;
+            background-color: $white !important;
+            background-image: url(../images/icon-x--xs.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            background-size: 7px 7px;
+            border-radius: 50% !important;
+            width: 18px !important;
+            height: 18px !important;
+            top: 2px !important;
+        }
+    }
+
+    input:checked + label {
+        &::before {
+            background-image: linear-gradient(to top, #78e3a1 0%, $green-light 100%);
+            outline: none !important;
+        }
+
+        &::after {
+            content: "E";
+            font-family: "dm-admin";
+            color: #43c368;
+            background-image: url(../images/icon-check--xs.svg);
+            background-size: 9px 7px;
+            width: 18px !important;
+            height: 18px !important;
+            right: 4px;
+            left: auto;
+        }
+    }
+
+    span {
+        padding-left: 20px;
+        color: $navy;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

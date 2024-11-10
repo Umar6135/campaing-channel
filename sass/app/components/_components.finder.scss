@@ -1,0 +1,98 @@
+/*------------------------------------*
+	@COMPONENTS #FINDER
+\*------------------------------------*/
+
+.finder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 250px;
+    position: relative;
+    padding-bottom: 4px;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 1px;
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $grey;
+        @include trans;
+    }
+
+    &.show {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    .form-control {
+        border: none;
+        display: none;
+        height: 24px !important;
+        width: 100%;
+    }
+
+    &.show {
+        .form-control {
+            display: block;
+        }
+    }
+}
+
+.finder__btn {
+    background-color: transparent;
+    height: 24px;
+    padding: 0;
+}
+
+.finder-alt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+
+    .form-group {
+        display: flex;
+        flex: 1;
+        position: relative;
+
+        .finder__btn {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        .form-control {
+            outline: transparent !important;
+            box-shadow: none !important;
+            display: flex;
+            border: 1px solid #c0c4c9;
+            border-radius: 4px !important;
+            height: 40px !important;
+            padding: 8px 10px 8px 30px;
+
+            &:focus {
+                border: 1px solid $grey !important;
+            }
+        }
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+.finder-alt--sm {
+    .form-group {
+        .form-control {
+            height: 36px !important;
+            padding: 4px 10px 4px 40px;
+        }
+    }
+}

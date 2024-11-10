@@ -1,0 +1,49 @@
+/*------------------------------------*
+	@COMPONENTS #HOURS
+\*------------------------------------*/
+.dm-new-hours {
+    .hours {
+        padding: 40px 30px;
+        width: 100%;
+        border-radius: 6px;
+        background-color: $white-dark;
+    }
+
+    .hours__content--disabled {
+        opacity: 0.5;
+    }
+
+    .hours__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .custom-control {
+            margin-right: auto;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            label {
+                margin-right: 10px;
+            }
+        }
+        .profile-checkbox {
+            flex: 2;
+        }
+        .profile-times {
+            flex: 5;
+        }
+        .form-control--lg {
+            max-width: 110px;
+            flex: 2;
+        }
+    }
+}

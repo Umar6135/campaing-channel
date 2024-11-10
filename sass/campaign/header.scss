@@ -1,0 +1,168 @@
+#campaign-header {
+
+    &.shadow-bottom {
+        -moz-box-shadow:0 3px 5px rgba(182, 182, 182, 0.75);
+        -webkit-box-shadow: 0 3px 5px rgba(182, 182, 182, 0.75);
+        box-shadow: 0 3px 5px rgba(182, 182, 182, 0.75);
+    }
+
+    .header-wrap {
+        background-color: #fff;
+        height: 60px;
+
+        .header {
+            max-width: $page-body-width;
+            margin: auto;
+            color: #324047;
+
+            .campaign-info {
+                font-size: 1.5rem;
+                line-height: 60px;
+                &.with-client {
+                    line-height: 40px;
+                }
+
+                .header-left-b {
+                    max-width: 900px;
+                    padding: 0 20px 0 7px;
+                }
+                a.back-link {
+                    color: #324047;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    .icon-arrow-left {
+                        vertical-align: middle;
+                    }
+                }
+
+                .name {
+                    /*border-bottom: 1px dashed #979797;*/
+                }
+
+                .state {
+                    font-size: 0.625rem;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 12.5px;
+                    vertical-align: middle;
+                    padding: 3px 10px;
+                    &.upcoming {
+                        background-color: $color-upcoming;
+                    }
+                    &.active {
+                        background-color: $color-active;
+                    }
+                    &.expired {
+                        background-color: $color-expired;
+                    }
+                    &.archived {
+                        background-color: $color-archived;
+                    }
+                    &.draft {
+                        background-color: $color-draft;
+                    }
+                }
+            }
+
+            .client-info {
+                color: #324047;
+                font-size: 0.875rem;
+                margin-left: 30px;
+                margin-top: -10px;
+            }
+
+            .header-right {
+                line-height: 60px;
+
+                #campaign-options-dropdown {
+                    margin-right: 3px;
+                    background: transparent;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+
+                    .icon-ellipsis {
+                        font-size: 2.0rem;
+                        vertical-align: middle;
+                        line-height: 0;
+                        &:before {
+                            line-height: 40%;
+                        }
+                    }
+                    &:after {
+                        display:none;
+                    }
+
+                }
+                .dropdown-menu {
+                    border-radius: 4px;
+                    padding: 0;
+                    font-size: 14px;
+                    text-align: left;
+                    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
+                    a {
+                        height: 45px;
+                        line-height: 2.9;
+                        font-size: 15px;
+                        padding: 0 0 0 12px;
+                        color: #1d2123;
+                        display: block;
+                        margin: 0 4px;
+                        border-radius: 4px;
+                        width: 95%;
+
+                        &:hover {
+                            color: #1d2123;
+                            background: #f8faf9;
+                        }
+                    }
+                }
+
+                #save-campaign-btn {
+                    width: 90px;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+            }
+        }
+    }
+
+}
+
+#campaign-subnav {
+
+    .subnav-wrap {
+        height: auto;
+        line-height: 50px;
+
+        .subnav {
+            max-width: $page-body-width;
+            margin: auto;
+            font-size: 1rem;
+            color: #324047;
+
+            .nav a {
+                padding: 10px;
+                margin-right: 10px;
+                color: #324047;
+                opacity: 0.5;
+                &:hover {
+                    text-decoration: none;
+                    opacity: 1;
+                }
+                &.active {
+                    font-family: $font-family-bold-dm;
+                    font-weight: $font-weight-bold;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#edit-campaign-modal {
+    .form-control.edit-campaign-date {
+        background-color:transparent;
+    }
+}
