@@ -305,6 +305,7 @@ border-radius: 8px;
         // Design Section on the left
         .design-section {
             max-width: 287px;
+            width: 100%;
 
             h3 {
                 font-size: 16px;
@@ -402,8 +403,8 @@ border-radius: 8px;
 
         // Preview Section on the right
         .preview-section {
-            width: 560px;
-
+            max-width: 560px;
+width: 100%;
             h3 {
                 font-size: 16px;
                 font-weight: 700;
@@ -423,7 +424,7 @@ border-radius: 8px;
 
                 .preview-front,
                 .preview-back {
-                    width: 50%;
+                    max-width: 50%;
 
                     h4 {
                         font-size: 14px;
@@ -434,10 +435,8 @@ border-radius: 8px;
                     }
 
                     img {
-                        width: 100%;
-                        border: 1px solid #ddd;
-                        border-radius: 4px;
-                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        max-width: 100%;
+                    
                     }
                 }
             }
@@ -474,6 +473,7 @@ margin-bottom: 4px;
 
             // Styling for dropdowns
             select {
+                max-width: 100%;
                 width: 100%;
                 padding: 10px 12px;
                 border-radius: 4px;
@@ -719,6 +719,9 @@ margin-bottom: 4px;
 
 
 .accordion{
+    &-icon{
+        margin-left: 24px;
+    }
     .accordion-button {
         position: relative;
         .icon {
@@ -732,21 +735,7 @@ margin-bottom: 4px;
         &:not(.collapsed) .icon {
           transform: rotate(180deg);
         }
-      }
-
-// SCSS styles for the rotating icon
-.accordion-icon {
-    transition: transform 0.3s ease;
-    position: absolute;
-    right: 1rem; // Position it to the right
-    top: 50%;
-    transform: translateY(-50%); // Center vertically
-  }
-  
-  // Rotate the icon when the button is expanded
-  button[aria-expanded="true"] .accordion-icon {
-    transform: rotate(180deg) translateY(-50%);
-  }
+    }
     }
 
 
